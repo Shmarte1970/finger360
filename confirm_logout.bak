@@ -1,0 +1,64 @@
+<?php
+// Comprobar si existe una sesión
+session_start();
+$has_session = isset($_SESSION['user_id']);
+?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Cierre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+    // Evitar que esta ventana se cierre con el evento beforeunload
+    window.addEventListener('beforeunload', function(e) {
+        // No hacer nada aquí para evitar que se cierre automáticamente
+    });
+
+    // Cuando la ventana se carga, enfocarla para asegurar que el usuario la vea
+    window.addEventListener('load', function() {
+        window.focus();
+
+        // Si la ventana principal ya está cerrada, cerrar esta ventana también
+        if (!window.opener || window.opener.closed) {
+            // La ventana principal ya está cerrada, cerrar esta ventana después de un breve retraso
+            setTimeout(function() {
+                window.close();
+            }, 500);
+        }
+    });
+    </script>
+</head>
+
+<body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="card shadow" style="max-width: 500px; width: 100%;">
+        <div class="card-header bg-warning text-dark">
+            <h5 class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> Alerta de seguridad</h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-title">¿Está seguro que desea salir?</h6>
+            <?php if ($has_session): ?>
+            <p>Su sesión podría quedar abierta si cierra el navegador directamente, especialmente en Google Chrome.</p>
+            <p class="mb-0"><strong>Se recomienda cerrar sesión correctamente para mayor seguridad.</strong></p>
+            <?php else: ?>
+            <p>No tiene una sesión activa. Puede cerrar esta ventana con seguridad.</p>
+            <?php endif; ?>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn-secondary" onclick="window.opener.focus(); window.close();">Volver a la
+                aplicación</button>
+            <?php if ($has_session): ?>
+            <a href="logout.php?from_confirm=1" class="btn btn-danger">
+                <i class="fas fa-power-off me-1"></i> Cerrar sesión ahora
+            </a>
+            <?php else: ?>
+            <button class="btn btn-primary" onclick="window.close();">Cerrar ventana</button>
+            <?php endif; ?>
+        </div>
+    </div>
+</body>
+
+</html>

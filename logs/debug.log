@@ -1,0 +1,878 @@
+[2025-04-17 07:50:20] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 07:50:20] Método HTTP: POST
+[2025-04-17 07:50:20] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 07:50:20] Archivo de conexión incluido correctamente
+[2025-04-17 07:50:20] Procesando solicitud POST
+[2025-04-17 07:50:20] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 07:50:20] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 07:50:20] Conexión a la base de datos inicializada
+[2025-04-17 07:50:20] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 07:50:20] Usuario encontrado: ID=7
+[2025-04-17 07:50:20] Nueva contraseña generada
+[2025-04-17 07:50:20] Contraseña hasheada
+[2025-04-17 07:50:20] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 07:50:20] Resultado de la actualización: Éxito
+[2025-04-17 07:50:20] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 07:50:20] Contraseña actualizada en la base de datos
+[2025-04-17 07:50:20] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover) VALUES (?, ?, ?)
+[2025-04-17 07:50:20] Excepción: SQLSTATE[HY093]: Invalid parameter number
+[2025-04-17 07:50:20] Respuesta de error (excepción): {"status":"error","message":"Error al procesar la solicitud: SQLSTATE[HY093]: Invalid parameter number"}
+[2025-04-17 07:50:20] Fin de la solicitud
+[2025-04-17 07:51:14] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 07:51:14] Método HTTP: POST
+[2025-04-17 07:51:14] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 07:51:14] Archivo de conexión incluido correctamente
+[2025-04-17 07:51:14] Procesando solicitud POST
+[2025-04-17 07:51:14] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 07:51:14] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 07:51:14] Conexión a la base de datos inicializada
+[2025-04-17 07:51:14] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 07:51:14] Usuario encontrado: ID=7
+[2025-04-17 07:51:14] Nueva contraseña generada
+[2025-04-17 07:51:14] Contraseña hasheada
+[2025-04-17 07:51:14] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 07:51:14] Resultado de la actualización: Éxito
+[2025-04-17 07:51:14] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 07:51:14] Contraseña actualizada en la base de datos
+[2025-04-17 07:51:14] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion) VALUES (?, ?)
+[2025-04-17 07:51:14] Solicitud registrada: ID=47
+[2025-04-17 07:51:14] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 07:51:14] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 07:51:14"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: G&SGaKd*9J\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>G&SGaKd*9J<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 07:51:14] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 07:51:15] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 07:51:15] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 07:51:15] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 07:51:15] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"47"}
+[2025-04-17 07:51:15] Fin de la solicitud
+[2025-04-17 07:57:16] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 07:57:16] Método HTTP: POST
+[2025-04-17 07:57:16] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 07:57:16] Archivo de conexión incluido correctamente
+[2025-04-17 07:57:16] Procesando solicitud POST
+[2025-04-17 07:57:16] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 07:57:16] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 07:57:16] Conexión a la base de datos inicializada
+[2025-04-17 07:57:16] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 07:57:16] Usuario encontrado: ID=7
+[2025-04-17 07:57:16] Nueva contraseña generada
+[2025-04-17 07:57:16] Contraseña hasheada
+[2025-04-17 07:57:16] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 07:57:16] Resultado de la actualización: Éxito
+[2025-04-17 07:57:17] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 07:57:17] Contraseña actualizada en la base de datos
+[2025-04-17 07:57:17] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover) VALUES (?, ?, ?)
+[2025-04-17 07:57:17] Solicitud registrada: ID=48
+[2025-04-17 07:57:17] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 07:57:17] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 07:57:17"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: Nr1n7N2IIY\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>Nr1n7N2IIY<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 07:57:17] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 07:57:17] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 07:57:17] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 07:57:17] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 07:57:17] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"48"}
+[2025-04-17 07:57:17] Fin de la solicitud
+[2025-04-17 09:42:50] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 09:42:50] Método HTTP: POST
+[2025-04-17 09:42:50] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 09:42:50] Archivo de conexión incluido correctamente
+[2025-04-17 09:42:50] Procesando solicitud POST
+[2025-04-17 09:42:50] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 09:42:50] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 09:42:50] Conexión a la base de datos inicializada
+[2025-04-17 09:42:50] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 09:42:50] Usuario encontrado: ID=7
+[2025-04-17 09:42:50] Nueva contraseña generada
+[2025-04-17 09:42:50] Contraseña hasheada
+[2025-04-17 09:42:50] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 09:42:50] Resultado de la actualización: Éxito
+[2025-04-17 09:42:50] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 09:42:50] Contraseña actualizada en la base de datos
+[2025-04-17 09:42:50] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover) VALUES (?, ?, ?)
+[2025-04-17 09:42:50] Solicitud registrada: ID=49
+[2025-04-17 09:42:50] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 09:42:50] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 09:42:50"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: @!CO(PnPym\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>@!CO(PnPym<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 09:42:50] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 09:42:50] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 09:42:50] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 09:42:50] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 09:42:50] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"49"}
+[2025-04-17 09:42:50] Fin de la solicitud
+[2025-04-17 10:14:14] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 10:14:14] Método HTTP: POST
+[2025-04-17 10:14:14] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 10:14:14] Archivo de conexión incluido correctamente
+[2025-04-17 10:14:14] Procesando solicitud POST
+[2025-04-17 10:14:14] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 10:14:14] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 10:14:14] Conexión a la base de datos inicializada
+[2025-04-17 10:14:14] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 10:14:14] Usuario encontrado: ID=7
+[2025-04-17 10:14:14] Nueva contraseña generada
+[2025-04-17 10:14:14] Contraseña hasheada
+[2025-04-17 10:14:14] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 10:14:14] Resultado de la actualización: Éxito
+[2025-04-17 10:14:14] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 10:14:14] Contraseña actualizada en la base de datos
+[2025-04-17 10:14:14] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover) VALUES (?, ?, ?)
+[2025-04-17 10:14:14] Solicitud registrada: ID=50
+[2025-04-17 10:14:14] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 10:14:14] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 10:14:14"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: yeC(S(F9bi\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>yeC(S(F9bi<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 10:14:14] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 10:14:14] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 10:14:15] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 10:14:15] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 10:14:15] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"50"}
+[2025-04-17 10:14:15] Fin de la solicitud
+[2025-04-17 10:14:46] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 10:14:46] Método HTTP: POST
+[2025-04-17 10:14:46] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 10:14:46] Archivo de conexión incluido correctamente
+[2025-04-17 10:14:46] Procesando solicitud POST
+[2025-04-17 10:14:46] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 10:14:46] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 10:14:46] Conexión a la base de datos inicializada
+[2025-04-17 10:14:46] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 10:14:46] Usuario encontrado: ID=7
+[2025-04-17 10:14:46] Nueva contraseña generada
+[2025-04-17 10:14:46] Contraseña hasheada
+[2025-04-17 10:14:46] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 10:14:46] Resultado de la actualización: Éxito
+[2025-04-17 10:14:47] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 10:14:47] Contraseña actualizada en la base de datos
+[2025-04-17 10:14:47] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover) VALUES (?, ?, ?)
+[2025-04-17 10:14:47] Solicitud registrada: ID=51
+[2025-04-17 10:14:47] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 10:14:47] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 10:14:47"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: K9obv%t2UL\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>K9obv%t2UL<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 10:14:47] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 10:14:47] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 10:14:47] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 10:14:47] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 10:14:47] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"51"}
+[2025-04-17 10:14:47] Fin de la solicitud
+[2025-04-17 10:15:04] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 10:15:04] Método HTTP: POST
+[2025-04-17 10:15:04] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 10:15:04] Archivo de conexión incluido correctamente
+[2025-04-17 10:15:04] Procesando solicitud POST
+[2025-04-17 10:15:04] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 10:15:04] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 10:15:04] Conexión a la base de datos inicializada
+[2025-04-17 10:15:04] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 10:15:04] Usuario encontrado: ID=7
+[2025-04-17 10:15:04] Nueva contraseña generada
+[2025-04-17 10:15:04] Contraseña hasheada
+[2025-04-17 10:15:04] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 10:15:04] Resultado de la actualización: Éxito
+[2025-04-17 10:15:04] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 10:15:04] Contraseña actualizada en la base de datos
+[2025-04-17 10:15:04] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover) VALUES (?, ?, ?)
+[2025-04-17 10:15:04] Solicitud registrada: ID=52
+[2025-04-17 10:15:04] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 10:15:04] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 10:15:04"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: Z0TqoY^tad\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>Z0TqoY^tad<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 10:15:04] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 10:15:04] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 10:15:04] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 10:15:04] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 10:15:04] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"52"}
+[2025-04-17 10:15:04] Fin de la solicitud
+[2025-04-17 10:19:38] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 10:19:38] Método HTTP: POST
+[2025-04-17 10:19:38] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 10:19:38] Archivo de conexión incluido correctamente
+[2025-04-17 10:19:38] Procesando solicitud POST
+[2025-04-17 10:19:38] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 10:19:38] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 10:19:38] Conexión a la base de datos inicializada
+[2025-04-17 10:19:38] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 10:19:38] Usuario encontrado: ID=7
+[2025-04-17 10:19:38] Nueva contraseña generada
+[2025-04-17 10:19:38] Contraseña hasheada
+[2025-04-17 10:19:38] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 10:19:38] Resultado de la actualización: Éxito
+[2025-04-17 10:19:38] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 10:19:38] Contraseña actualizada en la base de datos
+[2025-04-17 10:19:38] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover) VALUES (?, ?, ?)
+[2025-04-17 10:19:38] Solicitud registrada: ID=53
+[2025-04-17 10:19:38] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 10:19:38] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 10:19:38"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: sEkojBf2uH\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>sEkojBf2uH<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 10:19:38] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 10:19:38] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 10:19:39] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 10:19:39] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 10:19:39] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"53"}
+[2025-04-17 10:19:39] Fin de la solicitud
+[2025-04-17 11:14:27] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 11:14:27] Método HTTP: POST
+[2025-04-17 11:14:27] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 11:14:27] Archivo de conexión incluido correctamente
+[2025-04-17 11:14:27] Procesando solicitud POST
+[2025-04-17 11:14:27] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 11:14:27] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 11:14:27] Conexión a la base de datos inicializada
+[2025-04-17 11:14:27] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 11:14:27] Usuario encontrado: ID=7
+[2025-04-17 11:14:27] Nueva contraseña generada
+[2025-04-17 11:14:27] Contraseña hasheada
+[2025-04-17 11:14:27] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 11:14:27] Resultado de la actualización: Éxito
+[2025-04-17 11:14:27] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 11:14:27] Contraseña actualizada en la base de datos
+[2025-04-17 11:14:27] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-17 11:14:27] Solicitud registrada: ID=54
+[2025-04-17 11:14:27] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 11:14:27] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 11:14:27"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: S3MZ7td0zG\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>S3MZ7td0zG<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 11:14:27] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 11:14:27] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 11:14:28] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 11:14:28] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 11:14:28] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"54"}
+[2025-04-17 11:14:28] Fin de la solicitud
+[2025-04-17 11:21:19] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 11:21:19] Método HTTP: POST
+[2025-04-17 11:21:19] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 11:21:19] Archivo de conexión incluido correctamente
+[2025-04-17 11:21:19] Procesando solicitud POST
+[2025-04-17 11:21:19] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 11:21:19] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 11:21:19] Conexión a la base de datos inicializada
+[2025-04-17 11:21:19] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 11:21:19] Usuario encontrado: ID=7
+[2025-04-17 11:21:19] Nueva contraseña generada
+[2025-04-17 11:21:19] Contraseña hasheada
+[2025-04-17 11:21:19] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 11:21:19] Resultado de la actualización: Éxito
+[2025-04-17 11:21:19] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 11:21:19] Contraseña actualizada en la base de datos
+[2025-04-17 11:21:19] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-17 11:21:19] Solicitud registrada: ID=55
+[2025-04-17 11:21:19] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 11:21:19] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 11:21:19"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: fs0JIc4#1g\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>fs0JIc4#1g<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 11:21:19] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 11:21:19] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 11:21:20] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 11:21:20] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 11:21:20] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"55"}
+[2025-04-17 11:21:20] Fin de la solicitud
+[2025-04-17 11:56:16] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 11:56:16] Método HTTP: POST
+[2025-04-17 11:56:16] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+[2025-04-17 11:56:16] Archivo de conexión incluido correctamente
+[2025-04-17 11:56:16] Procesando solicitud POST
+[2025-04-17 11:56:16] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 11:56:16] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 11:56:16] Conexión a la base de datos inicializada
+[2025-04-17 11:56:16] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 11:56:16] Usuario encontrado: ID=7
+[2025-04-17 11:56:16] Nueva contraseña generada
+[2025-04-17 11:56:16] Contraseña hasheada
+[2025-04-17 11:56:16] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 11:56:16] Resultado de la actualización: Éxito
+[2025-04-17 11:56:16] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 11:56:16] Contraseña actualizada en la base de datos
+[2025-04-17 11:56:16] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-17 11:56:16] Solicitud registrada: ID=56
+[2025-04-17 11:56:16] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 11:56:16] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 11:56:16"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: XY*3Geha$s\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>XY*3Geha$s<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 11:56:16] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 11:56:17] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 11:56:17] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 11:56:17] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 11:56:17] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"56"}
+[2025-04-17 11:56:17] Fin de la solicitud
+[2025-04-17 11:57:07] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 11:57:07] Método HTTP: POST
+[2025-04-17 11:57:07] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+[2025-04-17 11:57:07] Archivo de conexión incluido correctamente
+[2025-04-17 11:57:07] Procesando solicitud POST
+[2025-04-17 11:57:07] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 11:57:07] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 11:57:07] Conexión a la base de datos inicializada
+[2025-04-17 11:57:07] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 11:57:07] Usuario encontrado: ID=7
+[2025-04-17 11:57:07] Nueva contraseña generada
+[2025-04-17 11:57:07] Contraseña hasheada
+[2025-04-17 11:57:07] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 11:57:07] Resultado de la actualización: Éxito
+[2025-04-17 11:57:07] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 11:57:07] Contraseña actualizada en la base de datos
+[2025-04-17 11:57:07] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-17 11:57:07] Solicitud registrada: ID=57
+[2025-04-17 11:57:07] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 11:57:07] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 11:57:07"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: B%(hOCMam6\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>B%(hOCMam6<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 11:57:07] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 11:57:07] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 11:57:07] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 11:57:07] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 11:57:07] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"57"}
+[2025-04-17 11:57:07] Fin de la solicitud
+[2025-04-17 12:52:05] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 12:52:05] Método HTTP: POST
+[2025-04-17 12:52:05] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 12:52:05] Archivo de conexión incluido correctamente
+[2025-04-17 12:52:05] Procesando solicitud POST
+[2025-04-17 12:52:05] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 12:52:05] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 12:52:05] Conexión a la base de datos inicializada
+[2025-04-17 12:52:05] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 12:52:05] Usuario encontrado: ID=7
+[2025-04-17 12:52:05] Nueva contraseña generada
+[2025-04-17 12:52:05] Contraseña hasheada
+[2025-04-17 12:52:05] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 12:52:05] Resultado de la actualización: Éxito
+[2025-04-17 12:52:05] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 12:52:05] Contraseña actualizada en la base de datos
+[2025-04-17 12:52:06] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-17 12:52:06] Solicitud registrada: ID=58
+[2025-04-17 12:52:06] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 12:52:06] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 12:52:06"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: wSxW16@X0e\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>wSxW16@X0e<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 12:52:06] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 12:52:06] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 12:52:06] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 12:52:06] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 12:52:06] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"58"}
+[2025-04-17 12:52:06] Fin de la solicitud
+[2025-04-17 12:53:57] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 12:53:57] Método HTTP: POST
+[2025-04-17 12:53:57] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 12:53:57] Archivo de conexión incluido correctamente
+[2025-04-17 12:53:57] Procesando solicitud POST
+[2025-04-17 12:53:57] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 12:53:57] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 12:53:57] Conexión a la base de datos inicializada
+[2025-04-17 12:53:57] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 12:53:57] Usuario encontrado: ID=7
+[2025-04-17 12:53:57] Nueva contraseña generada
+[2025-04-17 12:53:57] Contraseña hasheada
+[2025-04-17 12:53:57] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 12:53:57] Resultado de la actualización: Éxito
+[2025-04-17 12:53:57] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 12:53:57] Contraseña actualizada en la base de datos
+[2025-04-17 12:53:57] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-17 12:53:57] Solicitud registrada: ID=59
+[2025-04-17 12:53:57] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 12:53:57] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 12:53:57"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: DfTHOs$8^A\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>DfTHOs$8^A<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 12:53:57] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 12:53:58] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 12:53:58] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 12:53:58] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 12:53:58] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"59"}
+[2025-04-17 12:53:58] Fin de la solicitud
+[2025-04-17 13:08:31] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-17 13:08:31] Método HTTP: POST
+[2025-04-17 13:08:31] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-17 13:08:31] Archivo de conexión incluido correctamente
+[2025-04-17 13:08:31] Procesando solicitud POST
+[2025-04-17 13:08:31] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-04-17 13:08:31] Email recibido: dcasaponsa@gmail.com
+[2025-04-17 13:08:31] Conexión a la base de datos inicializada
+[2025-04-17 13:08:31] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-17 13:08:31] Usuario encontrado: ID=7
+[2025-04-17 13:08:31] Nueva contraseña generada
+[2025-04-17 13:08:31] Contraseña hasheada
+[2025-04-17 13:08:31] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-17 13:08:31] Resultado de la actualización: Éxito
+[2025-04-17 13:08:31] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-17 13:08:31] Contraseña actualizada en la base de datos
+[2025-04-17 13:08:31] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-17 13:08:31] Solicitud registrada: ID=60
+[2025-04-17 13:08:31] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-04-17 13:08:31] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-17 13:08:31"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: V6a#cXQHai\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>V6a#cXQHai<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-17 13:08:31] Enviando solicitud a SendGrid con SSL...
+[2025-04-17 13:08:32] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-17 13:08:32] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-17 13:08:32] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-17 13:08:32] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"60"}
+[2025-04-17 13:08:32] Fin de la solicitud
+[2025-04-18 10:04:27] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-18 10:04:27] Método HTTP: POST
+[2025-04-18 10:04:27] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-18 10:04:27] Archivo de conexión incluido correctamente
+[2025-04-18 10:04:27] Procesando solicitud POST
+[2025-04-18 10:04:27] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-04-18 10:04:27] Email recibido: riosmacias@gmail.com
+[2025-04-18 10:04:27] Conexión a la base de datos inicializada
+[2025-04-18 10:04:27] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-18 10:04:27] Usuario encontrado: ID=6
+[2025-04-18 10:04:27] Nueva contraseña generada
+[2025-04-18 10:04:27] Contraseña hasheada
+[2025-04-18 10:04:27] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-18 10:04:27] Resultado de la actualización: Éxito
+[2025-04-18 10:04:27] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-18 10:04:27] Contraseña actualizada en la base de datos
+[2025-04-18 10:04:27] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-18 10:04:27] Solicitud registrada: ID=61
+[2025-04-18 10:04:27] Preparando envío de correo a: riosmacias@gmail.com
+[2025-04-18 10:04:27] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-18 10:04:27"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: j5Vrmim&mD\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>j5Vrmim&mD<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-18 10:04:27] Enviando solicitud a SendGrid con SSL...
+[2025-04-18 10:04:27] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-18 10:04:28] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-18 10:04:28] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-18 10:04:28] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"61"}
+[2025-04-18 10:04:28] Fin de la solicitud
+[2025-04-18 10:06:21] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-04-18 10:06:21] Método HTTP: POST
+[2025-04-18 10:06:21] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+[2025-04-18 10:06:21] Archivo de conexión incluido correctamente
+[2025-04-18 10:06:21] Procesando solicitud POST
+[2025-04-18 10:06:21] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-04-18 10:06:21] Email recibido: riosmacias@gmail.com
+[2025-04-18 10:06:21] Conexión a la base de datos inicializada
+[2025-04-18 10:06:21] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-04-18 10:06:21] Usuario encontrado: ID=6
+[2025-04-18 10:06:21] Nueva contraseña generada
+[2025-04-18 10:06:21] Contraseña hasheada
+[2025-04-18 10:06:21] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-04-18 10:06:21] Resultado de la actualización: Éxito
+[2025-04-18 10:06:21] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-04-18 10:06:21] Contraseña actualizada en la base de datos
+[2025-04-18 10:06:21] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-04-18 10:06:21] Solicitud registrada: ID=62
+[2025-04-18 10:06:21] Preparando envío de correo a: riosmacias@gmail.com
+[2025-04-18 10:06:21] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-04-18 10:06:21"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: elp3@jdUZ&\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>elp3@jdUZ&<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-04-18 10:06:21] Enviando solicitud a SendGrid con SSL...
+[2025-04-18 10:06:21] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-04-18 10:06:21] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-04-18 10:06:21] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-04-18 10:06:21] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"62"}
+[2025-04-18 10:06:21] Fin de la solicitud
+[2025-05-05 14:48:21] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 14:48:21] Método HTTP: POST
+[2025-05-05 14:48:21] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 14:48:21] Archivo de conexión incluido correctamente
+[2025-05-05 14:48:21] Procesando solicitud POST
+[2025-05-05 14:48:21] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 14:48:21] Email recibido: riosmacias@gmail.com
+[2025-05-05 14:48:21] Conexión a la base de datos inicializada
+[2025-05-05 14:48:21] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 14:48:21] Usuario encontrado: ID=6
+[2025-05-05 14:48:21] Nueva contraseña generada
+[2025-05-05 14:48:21] Contraseña hasheada
+[2025-05-05 14:48:21] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 14:48:21] Resultado de la actualización: Éxito
+[2025-05-05 14:48:21] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 14:48:21] Contraseña actualizada en la base de datos
+[2025-05-05 14:48:21] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 14:48:21] Solicitud registrada: ID=63
+[2025-05-05 14:48:21] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 14:48:21] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 14:48:21"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: gHf82KygAQ\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>gHf82KygAQ<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 14:48:21] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 14:48:21] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 14:48:21] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-05 14:48:21] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-05 14:48:21] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"63"}
+[2025-05-05 14:48:21] Fin de la solicitud
+[2025-05-05 17:19:44] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 17:19:44] Método HTTP: POST
+[2025-05-05 17:19:44] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 17:19:44] Archivo de conexión incluido correctamente
+[2025-05-05 17:19:44] Procesando solicitud POST
+[2025-05-05 17:19:44] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 17:19:44] Email recibido: riosmacias@gmail.com
+[2025-05-05 17:19:44] Conexión a la base de datos inicializada
+[2025-05-05 17:19:44] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 17:19:44] Usuario encontrado: ID=6
+[2025-05-05 17:19:44] Nueva contraseña generada
+[2025-05-05 17:19:44] Contraseña hasheada
+[2025-05-05 17:19:44] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 17:19:44] Resultado de la actualización: Éxito
+[2025-05-05 17:19:44] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 17:19:44] Contraseña actualizada en la base de datos
+[2025-05-05 17:19:44] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 17:19:44] Solicitud registrada: ID=64
+[2025-05-05 17:19:44] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 17:19:44] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 17:19:44"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: QSTQU1AU22\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>QSTQU1AU22<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 17:19:44] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 17:19:44] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 17:19:44] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-05 17:19:44] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-05 17:19:44] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"64"}
+[2025-05-05 17:19:44] Fin de la solicitud
+[2025-05-05 17:53:16] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 17:53:16] Método HTTP: POST
+[2025-05-05 17:53:16] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 17:53:16] Archivo de conexión incluido correctamente
+[2025-05-05 17:53:16] Procesando solicitud POST
+[2025-05-05 17:53:16] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 17:53:16] Email recibido: riosmacias@gmail.com
+[2025-05-05 17:53:16] Conexión a la base de datos inicializada
+[2025-05-05 17:53:16] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 17:53:16] Usuario encontrado: ID=6
+[2025-05-05 17:53:16] Nueva contraseña generada
+[2025-05-05 17:53:16] Contraseña hasheada
+[2025-05-05 17:53:16] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 17:53:16] Resultado de la actualización: Éxito
+[2025-05-05 17:53:16] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 17:53:16] Contraseña actualizada en la base de datos
+[2025-05-05 17:53:16] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 17:53:16] Solicitud registrada: ID=65
+[2025-05-05 17:53:16] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 17:53:16] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 17:53:16"}],"from":{"email":"erpzarca@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: Y3L5cdvq2)\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>Y3L5cdvq2)<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 17:53:16] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 17:53:17] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 17:53:17] Respuesta de SendGrid: Código 403, Error: , Respuesta: {"errors":[{"message":"The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements","field":"from","help":null}]}
+[2025-05-05 17:53:17] Resultado del envío de correo: {"success":false,"status_code":403,"message":"{\"errors\":[{\"message\":\"The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https:\/\/sendgrid.com\/docs\/for-developers\/sending-email\/sender-identity\/ to see the Sender Identity requirements\",\"field\":\"from\",\"help\":null}]}"}
+[2025-05-05 17:53:17] Respuesta de advertencia: {"status":"warning","message":"Se ha generado una nueva contrase\u00f1a, pero hubo un problema al enviar el correo. Por favor, contacta con soporte.","id":"65"}
+[2025-05-05 17:53:17] Fin de la solicitud
+[2025-05-05 17:53:33] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 17:53:33] Método HTTP: POST
+[2025-05-05 17:53:33] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 17:53:33] Archivo de conexión incluido correctamente
+[2025-05-05 17:53:33] Procesando solicitud POST
+[2025-05-05 17:53:33] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 17:53:33] Email recibido: riosmacias@gmail.com
+[2025-05-05 17:53:33] Conexión a la base de datos inicializada
+[2025-05-05 17:53:33] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 17:53:33] Usuario encontrado: ID=6
+[2025-05-05 17:53:33] Nueva contraseña generada
+[2025-05-05 17:53:33] Contraseña hasheada
+[2025-05-05 17:53:33] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 17:53:33] Resultado de la actualización: Éxito
+[2025-05-05 17:53:33] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 17:53:33] Contraseña actualizada en la base de datos
+[2025-05-05 17:53:33] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 17:53:33] Solicitud registrada: ID=66
+[2025-05-05 17:53:33] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 17:53:33] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 17:53:33"}],"from":{"email":"erpzarca@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: CWe3cqk43y\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>CWe3cqk43y<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 17:53:33] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 17:53:33] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 17:53:34] Respuesta de SendGrid: Código 403, Error: , Respuesta: {"errors":[{"message":"The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements","field":"from","help":null}]}
+[2025-05-05 17:53:34] Resultado del envío de correo: {"success":false,"status_code":403,"message":"{\"errors\":[{\"message\":\"The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https:\/\/sendgrid.com\/docs\/for-developers\/sending-email\/sender-identity\/ to see the Sender Identity requirements\",\"field\":\"from\",\"help\":null}]}"}
+[2025-05-05 17:53:34] Respuesta de advertencia: {"status":"warning","message":"Se ha generado una nueva contrase\u00f1a, pero hubo un problema al enviar el correo. Por favor, contacta con soporte.","id":"66"}
+[2025-05-05 17:53:34] Fin de la solicitud
+[2025-05-05 17:53:41] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 17:53:41] Método HTTP: POST
+[2025-05-05 17:53:41] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 17:53:41] Archivo de conexión incluido correctamente
+[2025-05-05 17:53:41] Procesando solicitud POST
+[2025-05-05 17:53:41] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 17:53:41] Email recibido: riosmacias@gmail.com
+[2025-05-05 17:53:41] Conexión a la base de datos inicializada
+[2025-05-05 17:53:41] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 17:53:41] Usuario encontrado: ID=6
+[2025-05-05 17:53:41] Nueva contraseña generada
+[2025-05-05 17:53:41] Contraseña hasheada
+[2025-05-05 17:53:41] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 17:53:41] Resultado de la actualización: Éxito
+[2025-05-05 17:53:41] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 17:53:41] Contraseña actualizada en la base de datos
+[2025-05-05 17:53:41] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 17:53:41] Solicitud registrada: ID=67
+[2025-05-05 17:53:41] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 17:53:41] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 17:53:41"}],"from":{"email":"erpzarca@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: oYo9l7(yNR\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>oYo9l7(yNR<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 17:53:41] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 17:53:41] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 17:53:42] Respuesta de SendGrid: Código 403, Error: , Respuesta: {"errors":[{"message":"The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements","field":"from","help":null}]}
+[2025-05-05 17:53:42] Resultado del envío de correo: {"success":false,"status_code":403,"message":"{\"errors\":[{\"message\":\"The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https:\/\/sendgrid.com\/docs\/for-developers\/sending-email\/sender-identity\/ to see the Sender Identity requirements\",\"field\":\"from\",\"help\":null}]}"}
+[2025-05-05 17:53:42] Respuesta de advertencia: {"status":"warning","message":"Se ha generado una nueva contrase\u00f1a, pero hubo un problema al enviar el correo. Por favor, contacta con soporte.","id":"67"}
+[2025-05-05 17:53:42] Fin de la solicitud
+[2025-05-05 17:53:56] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 17:53:56] Método HTTP: POST
+[2025-05-05 17:53:56] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 17:53:56] Archivo de conexión incluido correctamente
+[2025-05-05 17:53:56] Procesando solicitud POST
+[2025-05-05 17:53:56] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 17:53:56] Email recibido: riosmacias@gmail.com
+[2025-05-05 17:53:56] Conexión a la base de datos inicializada
+[2025-05-05 17:53:56] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 17:53:56] Usuario encontrado: ID=6
+[2025-05-05 17:53:56] Nueva contraseña generada
+[2025-05-05 17:53:56] Contraseña hasheada
+[2025-05-05 17:53:56] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 17:53:56] Resultado de la actualización: Éxito
+[2025-05-05 17:53:56] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 17:53:56] Contraseña actualizada en la base de datos
+[2025-05-05 17:53:56] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 17:53:56] Solicitud registrada: ID=68
+[2025-05-05 17:53:56] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 17:53:56] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 17:53:56"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: Q0Jj3JMnnn\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>Q0Jj3JMnnn<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 17:53:56] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 17:53:56] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 17:53:56] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-05 17:53:56] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-05 17:53:56] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"68"}
+[2025-05-05 17:53:56] Fin de la solicitud
+[2025-05-05 18:02:41] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 18:02:41] Método HTTP: POST
+[2025-05-05 18:02:41] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 18:02:41] Archivo de conexión incluido correctamente
+[2025-05-05 18:02:41] Procesando solicitud POST
+[2025-05-05 18:02:41] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 18:02:41] Email recibido: riosmacias@gmail.com
+[2025-05-05 18:02:41] Conexión a la base de datos inicializada
+[2025-05-05 18:02:41] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 18:02:41] Usuario encontrado: ID=6
+[2025-05-05 18:02:41] Nueva contraseña generada
+[2025-05-05 18:02:41] Contraseña hasheada
+[2025-05-05 18:02:41] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 18:02:41] Resultado de la actualización: Éxito
+[2025-05-05 18:02:42] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 18:02:42] Contraseña actualizada en la base de datos
+[2025-05-05 18:02:42] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 18:02:42] Solicitud registrada: ID=69
+[2025-05-05 18:02:42] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 18:02:42] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 18:02:42"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: lYOce*XTaW\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>lYOce*XTaW<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 18:02:42] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 18:02:42] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 18:02:42] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-05 18:02:42] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-05 18:02:42] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"69"}
+[2025-05-05 18:02:42] Fin de la solicitud
+[2025-05-05 18:03:30] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 18:03:30] Método HTTP: POST
+[2025-05-05 18:03:30] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 18:03:30] Archivo de conexión incluido correctamente
+[2025-05-05 18:03:30] Procesando solicitud POST
+[2025-05-05 18:03:30] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 18:03:30] Email recibido: riosmacias@gmail.com
+[2025-05-05 18:03:30] Conexión a la base de datos inicializada
+[2025-05-05 18:03:30] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 18:03:30] Usuario encontrado: ID=6
+[2025-05-05 18:03:30] Nueva contraseña generada
+[2025-05-05 18:03:30] Contraseña hasheada
+[2025-05-05 18:03:30] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 18:03:30] Resultado de la actualización: Éxito
+[2025-05-05 18:03:30] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 18:03:30] Contraseña actualizada en la base de datos
+[2025-05-05 18:03:31] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 18:03:31] Solicitud registrada: ID=70
+[2025-05-05 18:03:31] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 18:03:31] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 18:03:31"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: kRojKd$U3u\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>kRojKd$U3u<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 18:03:31] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 18:03:31] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 18:03:31] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-05 18:03:31] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-05 18:03:31] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"70"}
+[2025-05-05 18:03:31] Fin de la solicitud
+[2025-05-05 18:05:37] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-05 18:05:37] Método HTTP: POST
+[2025-05-05 18:05:37] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-05 18:05:37] Archivo de conexión incluido correctamente
+[2025-05-05 18:05:37] Procesando solicitud POST
+[2025-05-05 18:05:37] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-05 18:05:37] Email recibido: riosmacias@gmail.com
+[2025-05-05 18:05:37] Conexión a la base de datos inicializada
+[2025-05-05 18:05:37] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-05 18:05:37] Usuario encontrado: ID=6
+[2025-05-05 18:05:37] Nueva contraseña generada
+[2025-05-05 18:05:37] Contraseña hasheada
+[2025-05-05 18:05:37] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-05 18:05:37] Resultado de la actualización: Éxito
+[2025-05-05 18:05:38] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-05 18:05:38] Contraseña actualizada en la base de datos
+[2025-05-05 18:05:38] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-05 18:05:38] Solicitud registrada: ID=71
+[2025-05-05 18:05:38] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-05 18:05:38] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-05 18:05:38"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: 8f@P)1AMal\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>8f@P)1AMal<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-05 18:05:38] Enviando solicitud a SendGrid con SSL...
+[2025-05-05 18:05:38] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-05 18:05:38] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-05 18:05:38] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-05 18:05:38] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"71"}
+[2025-05-05 18:05:38] Fin de la solicitud
+[2025-05-06 08:24:28] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-06 08:24:28] Método HTTP: POST
+[2025-05-06 08:24:28] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-06 08:24:28] Archivo de conexión incluido correctamente
+[2025-05-06 08:24:28] Procesando solicitud POST
+[2025-05-06 08:24:28] Datos recibidos: {"email":"riosmaciaspedro@gmail.com"}
+[2025-05-06 08:24:28] Email recibido: riosmaciaspedro@gmail.com
+[2025-05-06 08:24:28] Conexión a la base de datos inicializada
+[2025-05-06 08:24:28] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-06 08:24:28] Usuario encontrado: ID=8
+[2025-05-06 08:24:28] Nueva contraseña generada
+[2025-05-06 08:24:28] Contraseña hasheada
+[2025-05-06 08:24:28] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-06 08:24:28] Resultado de la actualización: Éxito
+[2025-05-06 08:24:28] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-06 08:24:28] Contraseña actualizada en la base de datos
+[2025-05-06 08:24:28] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-06 08:24:28] Solicitud registrada: ID=72
+[2025-05-06 08:24:28] Preparando envío de correo a: riosmaciaspedro@gmail.com
+[2025-05-06 08:24:28] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmaciaspedro@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-06 08:24:28"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: lTPw*23h*%\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>lTPw*23h*%<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-06 08:24:28] Enviando solicitud a SendGrid con SSL...
+[2025-05-06 08:24:28] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-06 08:24:29] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-06 08:24:29] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-06 08:24:29] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico.","id":"72"}
+[2025-05-06 08:24:29] Fin de la solicitud
+[2025-05-14 10:38:29] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-14 10:38:29] Método HTTP: POST
+[2025-05-14 10:38:29] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+[2025-05-14 10:38:29] Archivo de conexión incluido correctamente
+[2025-05-14 10:38:29] Procesando solicitud POST
+[2025-05-14 10:38:29] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-05-14 10:38:29] Email recibido: dcasaponsa@gmail.com
+[2025-05-14 10:38:29] Conexión a la base de datos inicializada
+[2025-05-14 10:38:29] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-14 10:38:29] Usuario encontrado: ID=7
+[2025-05-14 10:38:29] Nueva contraseña generada
+[2025-05-14 10:38:29] Contraseña hasheada
+[2025-05-14 10:38:29] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-14 10:38:29] Resultado de la actualización: Éxito
+[2025-05-14 10:38:29] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-14 10:38:29] Contraseña actualizada en la base de datos
+[2025-05-14 10:38:29] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-14 10:38:30] Solicitud registrada: ID=73
+[2025-05-14 10:38:30] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-05-14 10:38:30] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-14 10:38:30"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: ycuqcIA&Zg\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>ycuqcIA&Zg<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-14 10:38:30] Enviando solicitud a SendGrid con SSL...
+[2025-05-14 10:38:30] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-14 10:38:31] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-14 10:38:31] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-14 10:38:31] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico. Revise la carpeta spam","id":"73"}
+[2025-05-14 10:38:31] Fin de la solicitud
+[2025-05-15 11:14:48] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-05-15 11:14:48] Método HTTP: POST
+[2025-05-15 11:14:48] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+[2025-05-15 11:14:48] Archivo de conexión incluido correctamente
+[2025-05-15 11:14:48] Procesando solicitud POST
+[2025-05-15 11:14:48] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-05-15 11:14:48] Email recibido: riosmacias@gmail.com
+[2025-05-15 11:14:48] Conexión a la base de datos inicializada
+[2025-05-15 11:14:48] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-05-15 11:14:48] Usuario encontrado: ID=6
+[2025-05-15 11:14:48] Nueva contraseña generada
+[2025-05-15 11:14:48] Contraseña hasheada
+[2025-05-15 11:14:48] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-05-15 11:14:48] Resultado de la actualización: Éxito
+[2025-05-15 11:14:48] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-05-15 11:14:48] Contraseña actualizada en la base de datos
+[2025-05-15 11:14:48] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-05-15 11:14:48] Solicitud registrada: ID=74
+[2025-05-15 11:14:48] Preparando envío de correo a: riosmacias@gmail.com
+[2025-05-15 11:14:48] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-05-15 11:14:48"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: CM$goYrKHu\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>CM$goYrKHu<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-05-15 11:14:48] Enviando solicitud a SendGrid con SSL...
+[2025-05-15 11:14:48] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-05-15 11:14:49] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-05-15 11:14:49] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-05-15 11:14:49] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico. Revise la carpeta spam","id":"74"}
+[2025-05-15 11:14:49] Fin de la solicitud
+[2025-06-02 09:27:25] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-06-02 09:27:25] Método HTTP: POST
+[2025-06-02 09:27:25] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0
+[2025-06-02 09:27:25] Archivo de conexión incluido correctamente
+[2025-06-02 09:27:25] Procesando solicitud POST
+[2025-06-02 09:27:25] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-06-02 09:27:25] Email recibido: dcasaponsa@gmail.com
+[2025-06-02 09:27:25] Conexión a la base de datos inicializada
+[2025-06-02 09:27:25] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-06-02 09:27:25] Usuario encontrado: ID=7
+[2025-06-02 09:27:25] Nueva contraseña generada
+[2025-06-02 09:27:25] Contraseña hasheada
+[2025-06-02 09:27:25] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-06-02 09:27:25] Resultado de la actualización: Éxito
+[2025-06-02 09:27:25] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-06-02 09:27:25] Contraseña actualizada en la base de datos
+[2025-06-02 09:27:25] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-06-02 09:27:25] Solicitud registrada: ID=75
+[2025-06-02 09:27:25] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-06-02 09:27:25] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-06-02 09:27:25"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: tZUnLsva$$\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>tZUnLsva$$<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-06-02 09:27:25] Enviando solicitud a SendGrid con SSL...
+[2025-06-02 09:27:25] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-06-02 09:27:26] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-06-02 09:27:26] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-06-02 09:27:26] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico. Revise la carpeta spam","id":"75"}
+[2025-06-02 09:27:26] Fin de la solicitud
+[2025-06-05 11:26:10] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-06-05 11:26:10] Método HTTP: POST
+[2025-06-05 11:26:10] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0
+[2025-06-05 11:26:10] Archivo de conexión incluido correctamente
+[2025-06-05 11:26:10] Procesando solicitud POST
+[2025-06-05 11:26:10] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-06-05 11:26:10] Email recibido: dcasaponsa@gmail.com
+[2025-06-05 11:26:10] Conexión a la base de datos inicializada
+[2025-06-05 11:26:10] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-06-05 11:26:10] Usuario encontrado: ID=7
+[2025-06-05 11:26:10] Nueva contraseña generada
+[2025-06-05 11:26:10] Contraseña hasheada
+[2025-06-05 11:26:10] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-06-05 11:26:10] Resultado de la actualización: Éxito
+[2025-06-05 11:26:10] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-06-05 11:26:10] Contraseña actualizada en la base de datos
+[2025-06-05 11:26:10] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-06-05 11:26:10] Solicitud registrada: ID=76
+[2025-06-05 11:26:10] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-06-05 11:26:10] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-06-05 11:26:10"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: rpUuSdxbz*\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>rpUuSdxbz*<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-06-05 11:26:10] Enviando solicitud a SendGrid con SSL...
+[2025-06-05 11:26:11] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-06-05 11:26:11] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-06-05 11:26:11] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-06-05 11:26:11] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico. Revise la carpeta spam","id":"76"}
+[2025-06-05 11:26:11] Fin de la solicitud
+[2025-06-10 09:16:04] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-06-10 09:16:04] Método HTTP: POST
+[2025-06-10 09:16:04] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0
+[2025-06-10 09:16:04] Archivo de conexión incluido correctamente
+[2025-06-10 09:16:04] Procesando solicitud POST
+[2025-06-10 09:16:04] Datos recibidos: {"email":"dcasaponsa@gmail.com"}
+[2025-06-10 09:16:04] Email recibido: dcasaponsa@gmail.com
+[2025-06-10 09:16:04] Conexión a la base de datos inicializada
+[2025-06-10 09:16:04] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-06-10 09:16:04] Usuario encontrado: ID=7
+[2025-06-10 09:16:04] Nueva contraseña generada
+[2025-06-10 09:16:04] Contraseña hasheada
+[2025-06-10 09:16:04] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-06-10 09:16:04] Resultado de la actualización: Éxito
+[2025-06-10 09:16:04] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-06-10 09:16:04] Contraseña actualizada en la base de datos
+[2025-06-10 09:16:04] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-06-10 09:16:04] Solicitud registrada: ID=77
+[2025-06-10 09:16:04] Preparando envío de correo a: dcasaponsa@gmail.com
+[2025-06-10 09:16:04] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"dcasaponsa@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-06-10 09:16:04"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: Lt8tGlu5mh\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>Lt8tGlu5mh<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-06-10 09:16:04] Enviando solicitud a SendGrid con SSL...
+[2025-06-10 09:16:04] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-06-10 09:16:05] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-06-10 09:16:05] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-06-10 09:16:05] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico. Revise la carpeta spam","id":"77"}
+[2025-06-10 09:16:05] Fin de la solicitud
+[2025-06-11 19:12:32] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-06-11 19:12:32] Método HTTP: POST
+[2025-06-11 19:12:32] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0
+[2025-06-11 19:12:32] Archivo de conexión incluido correctamente
+[2025-06-11 19:12:32] Procesando solicitud POST
+[2025-06-11 19:12:32] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-06-11 19:12:32] Email recibido: riosmacias@gmail.com
+[2025-06-11 19:12:32] Conexión a la base de datos inicializada
+[2025-06-11 19:12:32] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-06-11 19:12:32] Usuario encontrado: ID=6
+[2025-06-11 19:12:32] Nueva contraseña generada
+[2025-06-11 19:12:32] Contraseña hasheada
+[2025-06-11 19:12:32] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-06-11 19:12:32] Resultado de la actualización: Éxito
+[2025-06-11 19:12:32] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-06-11 19:12:32] Contraseña actualizada en la base de datos
+[2025-06-11 19:12:32] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-06-11 19:12:32] Solicitud registrada: ID=78
+[2025-06-11 19:12:32] Preparando envío de correo a: riosmacias@gmail.com
+[2025-06-11 19:12:32] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-06-11 19:12:32"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: )s%*d4wQP2\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>)s%*d4wQP2<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-06-11 19:12:32] Enviando solicitud a SendGrid con SSL...
+[2025-06-11 19:12:33] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-06-11 19:12:34] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-06-11 19:12:34] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-06-11 19:12:34] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico. Revise la carpeta spam","id":"78"}
+[2025-06-11 19:12:34] Fin de la solicitud
+[2025-06-11 19:12:36] === NUEVA SOLICITUD DE RECUPERACIÓN ===
+[2025-06-11 19:12:36] Método HTTP: POST
+[2025-06-11 19:12:36] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0
+[2025-06-11 19:12:36] Archivo de conexión incluido correctamente
+[2025-06-11 19:12:36] Procesando solicitud POST
+[2025-06-11 19:12:36] Datos recibidos: {"email":"riosmacias@gmail.com"}
+[2025-06-11 19:12:36] Email recibido: riosmacias@gmail.com
+[2025-06-11 19:12:36] Conexión a la base de datos inicializada
+[2025-06-11 19:12:36] Verificando si el email existe: SELECT idUser, emailUser FROM agusers WHERE emailUser = ?
+[2025-06-11 19:12:36] Usuario encontrado: ID=6
+[2025-06-11 19:12:36] Nueva contraseña generada
+[2025-06-11 19:12:36] Contraseña hasheada
+[2025-06-11 19:12:36] Actualizando contraseña: UPDATE agusers SET passwordUser = ? WHERE idUser = ?
+[2025-06-11 19:12:36] Resultado de la actualización: Éxito
+[2025-06-11 19:12:36] Verificación exitosa: la contraseña se actualizó correctamente
+[2025-06-11 19:12:36] Contraseña actualizada en la base de datos
+[2025-06-11 19:12:36] Registrando solicitud: INSERT INTO agrecuperacion (emailrecuperacion, daterecuperacion, passwordrecover, is_temporary) VALUES (?, ?, ?, 1)
+[2025-06-11 19:12:36] Solicitud registrada: ID=79
+[2025-06-11 19:12:36] Preparando envío de correo a: riosmacias@gmail.com
+[2025-06-11 19:12:36] Datos JSON para SendGrid: {"personalizations":[{"to":[{"email":"riosmacias@gmail.com","name":"Usuario"}],"subject":"Recuperaci\u00f3n de Contrase\u00f1a - 2025-06-11 19:12:36"}],"from":{"email":"shmarte@gmail.com","name":"Sistema de Recuperaci\u00f3n de Contrase\u00f1a"},"content":[{"type":"text\/plain","value":"Su nueva contrase\u00f1a temporal es: 1iA!qZJaw3\n\nPor favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad."},{"type":"text\/html","value":"<h2>Recuperaci\u00f3n de Contrase\u00f1a<\/h2><p>Su nueva contrase\u00f1a temporal es: <strong>1iA!qZJaw3<\/strong><\/p><p>Por favor, cambie esta contrase\u00f1a despu\u00e9s de iniciar sesi\u00f3n por motivos de seguridad.<\/p>"}]}
+[2025-06-11 19:12:36] Enviando solicitud a SendGrid con SSL...
+[2025-06-11 19:12:36] Error SSL detectado, intentando sin verificación SSL: SSL certificate problem: self-signed certificate in certificate chain
+[2025-06-11 19:12:36] Respuesta de SendGrid: Código 202, Error: , Respuesta: 
+[2025-06-11 19:12:36] Resultado del envío de correo: {"success":true,"status_code":202,"message":""}
+[2025-06-11 19:12:36] Respuesta de éxito: {"status":"success","message":"Se ha enviado una nueva contrase\u00f1a a tu correo electr\u00f3nico. Revise la carpeta spam","id":"79"}
+[2025-06-11 19:12:36] Fin de la solicitud

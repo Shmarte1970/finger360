@@ -1,0 +1,17 @@
+{
+    "name": "user/agent",
+    "autoload": {
+        "psr-4": {
+            "User\\Agent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shmarte1970",
+            "email": "shmarte@gmail.com"
+        }
+    ],
+    "require": {
+        "sendgrid/sendgrid": "^8.1"
+    }
+}

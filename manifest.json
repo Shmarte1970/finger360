@@ -1,0 +1,20 @@
+{
+    "name": "Finger360 Agenda",
+    "short_name": "Finger360",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0d6efd",
+    "description": "Agenda de contactos optimizada para móvil.",
+    "icons": [{
+            "src": "assets/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

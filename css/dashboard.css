@@ -1,0 +1,918 @@
+/* Estilos para el dashboard */
+
+body {
+    background-color: #f8f9fa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Clases para dispositivos específicos */
+
+body.mobile-device {
+    font-size: 14px;
+}
+
+body.samsung-galaxy-ultra {
+    /* Ajustes específicos para Samsung Galaxy Ultra */
+    --safe-area-inset-top: env(safe-area-inset-top, 0px);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+    padding-top: var(--safe-area-inset-top);
+    padding-bottom: var(--safe-area-inset-bottom);
+}
+
+body.iphone-11-pro {
+    /* Ajustes específicos para iPhone 11 Pro */
+    --safe-area-inset-top: env(safe-area-inset-top, 0px);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+    padding-top: var(--safe-area-inset-top);
+    padding-bottom: var(--safe-area-inset-bottom);
+}
+
+
+/* Contenedor principal de la aplicación */
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    min-height: 100vh;
+    position: relative;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    /* Para que el contenido no sobresalga de los bordes redondeados */
+}
+
+
+/* Media queries para ajustar el tamaño en diferentes pantallas */
+
+@media (max-width: 1200px) {
+    .app-container {
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+}
+
+
+/* Ajustes para tablets */
+
+@media (max-width: 768px) {
+
+    .navbar,
+    .search-container,
+    .button-container {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* Mantener el ancho fijo de 400px para el contenedor de tarjetas */
+    .contact-scroll-container {
+        width: 400px !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .sidebar {
+        min-height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        z-index: 1050;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .col-md-9.ms-sm-auto.col-lg-10.px-md-4 {
+        width: 100%;
+        margin-left: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .btn-floating-add-contact {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
+/* Ajustes específicos para móviles (Samsung Galaxy Ultra, iPhone 11 Pro, etc.) */
+
+@media (max-width: 480px) {
+
+    .btn,
+    .btn-sm {
+        min-width: 48px;
+        min-height: 48px;
+        font-size: 1.2rem;
+        padding: 0.75rem 1.2rem;
+    }
+
+    .rounded-circle,
+    .avatar-container img,
+    .additional-images img {
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    .form-control {
+        font-size: 1.1rem;
+        min-height: 48px;
+    }
+
+    .card {
+        margin-bottom: 18px;
+        border-radius: 14px;
+    }
+
+    .modal-dialog {
+        max-width: 98vw;
+        margin: 0.5rem auto;
+    }
+
+    .modal-content {
+        border-radius: 16px;
+        font-size: 1.1rem;
+    }
+
+    .input-group .form-control {
+        font-size: 1.1rem;
+        min-height: 48px;
+    }
+
+    .dropdown-menu {
+        font-size: 1.1rem;
+    }
+
+    /* Reducir padding y márgenes */
+    .card-body {
+        padding: 0.75rem;
+    }
+
+    .contact-scroll-container {
+        padding: 10px;
+        width: 400px !important;
+        max-width: 95% !important;
+        /* Permitir un pequeño margen en pantallas muy pequeñas */
+        margin: 0 auto !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Ajustar botón de búsqueda */
+    #btnSearchAgcontactos {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #btnSearchAgcontactos .fas {
+        margin-right: 2px;
+    }
+
+    /* Hacer que el texto del botón sea más pequeño */
+    .btn {
+        font-size: 0.85rem;
+    }
+
+    /* Ajustar el dropdown del usuario */
+    .dropdown-toggle {
+        font-size: 0.8rem !important;
+        padding: 0.2rem 0.4rem !important;
+    }
+
+    /* Ajustes específicos para Samsung Galaxy Ultra y iPhone 11 Pro */
+    .app-container {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* En pantallas muy pequeñas, ocultar el texto y mostrar solo el icono */
+
+@media (max-width: 375px) {
+
+    .search-text,
+    .add-text {
+        display: none;
+    }
+
+    #btnSearchAgcontactos .fas,
+    #btnAddContact .fas {
+        margin-right: 0;
+    }
+
+    #btnAddContact {
+        padding: 0.25rem 0.5rem;
+    }
+
+    /* Ajustes adicionales para pantallas muy pequeñas */
+    .card-header {
+        padding: 0.5rem;
+    }
+
+    .card-body {
+        padding: 0.5rem;
+    }
+}
+
+
+/* Estilos para la barra lateral */
+
+.sidebar {
+    min-height: auto;
+    /* Cambiado de 100vh a auto para que se ajuste al contenido */
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* Añadido padding inferior */
+    height: auto;
+    /* Altura automática basada en el contenido */
+    border-radius: 0 0 10px 10px;
+    /* Bordes redondeados en la parte inferior */
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #495057;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 20px;
+}
+
+.sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-menu li:hover {
+    background-color: #495057;
+}
+
+.sidebar-menu li.active {
+    background-color: #007bff;
+}
+
+
+/* Espacio adicional al final del sidebar */
+
+.sidebar-footer {
+    height: 20px;
+}
+
+
+/* Ajuste para la fila que contiene el sidebar */
+
+.app-container .row {
+    align-items: flex-start;
+    /* Alinear elementos al inicio en lugar de estirarlos */
+}
+
+
+/* Bordes redondeados para botones */
+
+.btn {
+    border-radius: 8px !important;
+    /* Bordes más redondeados para los botones */
+}
+
+
+/* Bordes redondeados para inputs */
+
+.form-control {
+    border-radius: 8px !important;
+    /* Bordes más redondeados para los inputs */
+}
+
+
+/* Bordes redondeados para grupos de inputs */
+
+.input-group {
+    border-radius: 8px !important;
+    /* Bordes más redondeados para los grupos de inputs */
+    overflow: hidden;
+    /* Para que el contenido no sobresalga de los bordes redondeados */
+}
+
+
+/* Estilos para la búsqueda activa */
+
+.search-active {
+    border-color: #007bff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+
+/* Ajustar los bordes de los elementos dentro de los grupos de inputs */
+
+.input-group .form-control:first-child {
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+
+.input-group .btn:last-child {
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+
+
+/* Estilos para el contenido principal */
+
+.main-content {
+    padding: 20px;
+}
+
+.navbar {
+    max-width: 400px;
+    margin: 0 0 10px 0;
+    /* Alineado a la izquierda */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 40px;
+    border-radius: 10px;
+    /* Bordes redondeados para la barra de navegación */
+}
+
+.navbar .container-fluid {
+    width: 100%;
+    justify-content: flex-start !important;
+    /* Asegurar que se mantenga a la derecha */
+}
+
+.navbar .navbar-toggler {
+    display: none;
+    margin-left: 0;
+}
+
+.navbar .d-flex {
+    margin-left: 0;
+    margin-right: auto;
+    /* Asegurar que el dropdown se mantenga a la derecha */
+}
+
+.dropdown-menu {
+    left: 0;
+    right: auto;
+}
+
+.dropdown-toggle {
+    padding: 0.25rem 0.5rem;
+}
+
+.dropdown-menu.dropdown-menu-end {
+    right: auto !important;
+    left: 0 !important;
+}
+
+
+/* Estilos para las tarjetas y contenedores */
+
+.welcome-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.action-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+/* Estilos para las tarjetas de contacto */
+
+.card {
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.card-header {
+    padding: 1rem;
+    position: relative;
+}
+
+
+/* Estilos para los avatares de contacto */
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.avatar-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+
+/* Estilos para las imágenes adicionales */
+
+.additional-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.additional-images img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+/* Estilo para el efecto hover-zoom */
+
+.hover-zoom-image {
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.hover-zoom-image:hover {
+    transform: scale(2.5);
+    z-index: 100;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+/* Ajustes específicos para cada tipo de imagen */
+
+.avatar-container .hover-zoom-image:hover {
+    transform-origin: left center;
+}
+
+.additional-images .hover-zoom-image:hover {
+    transform-origin: center top;
+}
+
+
+/* Ajustes para móviles */
+
+@media (max-width: 480px) {
+    .card-header {
+        padding: 0.75rem;
+    }
+
+    .avatar-container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .additional-images img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+
+.card-body {
+    padding: 1rem 1.25rem;
+    width: 100%;
+}
+
+.card-header {
+    padding: 0.75rem 1rem;
+    width: 100%;
+}
+
+
+/* Estilos para el contenedor de contactos */
+
+#contactsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 600px;
+    /* Altura máxima para mostrar aproximadamente 3 tarjetas */
+    overflow-y: auto;
+    /* Añadir barra de desplazamiento vertical cuando sea necesario */
+    padding-right: 25px;
+    /* Espacio aumentado para la barra de desplazamiento */
+    scrollbar-width: thin;
+    /* Para Firefox */
+    scrollbar-color: #007bff #f8f9fa;
+    /* Para Firefox */
+    position: relative;
+}
+
+
+/* Personalización de la barra de desplazamiento para Chrome, Edge y Safari */
+
+#contactsContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+#contactsContainer::-webkit-scrollbar-track {
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+#contactsContainer::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+    border: 2px solid #f8f9fa;
+}
+
+#contactsContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}
+
+.card-text {
+    margin-bottom: 0;
+    width: 100%;
+    word-break: break-word;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+
+/* Estilos para el contenedor con scrollbar */
+
+.contact-scroll-container {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 12px;
+    /* Aumentado el radio de los bordes */
+    background-color: #fff;
+    padding: 20px 15px 15px 20px;
+    /* Aumentado el padding superior y a la izquierda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+
+/* Efecto hover para el contenedor de contactos */
+
+.contact-scroll-container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Animaciones para las tarjetas */
+
+.contact-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Aplicar retraso a cada tarjeta para crear efecto cascada */
+
+.contact-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.contact-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.contact-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.contact-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.contact-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.contact-card:nth-child(n+6) {
+    animation-delay: 0.6s;
+}
+
+
+/* Estilos para reducir espacios y tamaños */
+
+.content-container {
+    margin-top: 0.5rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content-container .row {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+
+/* Estilos adicionales para asegurar consistencia en las tarjetas */
+
+.contact-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.contact-card .card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: 12px !important;
+    /* Bordes redondeados para las tarjetas */
+    overflow: hidden !important;
+    /* Para que el contenido no sobresalga de los bordes redondeados */
+}
+
+
+/* Forzar mismo ancho para todas las tarjetas */
+
+#contactsContainer>div {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Ajustes para tarjetas en móviles */
+
+@media (max-width: 480px) {
+    .card-header {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    /* Asegurar que las tarjetas tengan el mismo ancho en móviles */
+    .contact-card,
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+/* Contraste y área de toque */
+
+.btn,
+.btn-sm,
+.form-control,
+.dropdown-item {
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.btn-primary,
+.btn-success {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* Área de toque mínima */
+
+.btn,
+.btn-sm,
+.dropdown-item {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+
+/* Mejorar contraste de texto en botones y cards */
+
+.card,
+.modal-content {
+    color: #222;
+    background: #fff;
+}
+
+
+/* Lazy loading para imágenes */
+
+.avatar-container img,
+.additional-images img {
+    loading: lazy;
+}
+
+
+/* Estilos para el botón flotante de añadir contacto */
+
+.btn-floating-add-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-floating-add-contact:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-floating-add-contact:active {
+    transform: scale(0.95);
+}
+
+
+/* Ajuste para dispositivos móviles */
+
+@media (max-width: 768px) {
+    .btn-floating-add-contact {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
+/* Estilos para el botón flotante de añadir contacto */
+
+.floating-add-btn {
+    width: 116.55px;
+    height: 21px;
+    min-width: 116.55px;
+    min-height: 21px;
+    max-width: 116.55px;
+    max-height: 21px;
+    margin: 0 0 16px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    background-color: #198754;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0;
+    position: static;
+    z-index: 1;
+    display: block;
+    line-height: 21px;
+    text-align: center;
+}
+
+.floating-add-btn i {
+    margin-right: 6px;
+}
+
+
+/* Botones de acción (teléfono y WhatsApp) más pequeños en escritorio */
+
+@media (min-width: 481px) {
+
+    .contact-info .btn-primary.rounded-circle,
+    .contact-info .btn-success.rounded-circle {
+        min-width: 40px;
+        min-height: 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* Mantener tamaño grande en móvil */
+
+@media (max-width: 480px) {
+
+    .contact-info .btn-primary.rounded-circle,
+    .contact-info .btn-success.rounded-circle {
+        min-width: 48px;
+        min-height: 48px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

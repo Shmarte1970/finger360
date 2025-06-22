@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+    padding-top: 50px;
+}
+
+/* Estilos para el formulario de login */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-logo img {
+    max-width: 150px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-login {
+    background-color: #007bff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el formulario de registro */
+.register-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-register {
+    background-color: #28a745;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Los estilos para el dashboard se han movido a dashboard.css */
+
+/* Estilos para validación de formularios */
+.password-requirements {
+    margin-top: 10px;
+}
+
+.password-requirements .requirement {
+    margin-bottom: 5px;
+}
+
+.password-requirements .requirement i {
+    margin-right: 5px;
+}
+
+.password-requirements .valid {
+    color: #28a745;
+}
+
+.password-requirements .invalid {
+    color: #dc3545;
+}
