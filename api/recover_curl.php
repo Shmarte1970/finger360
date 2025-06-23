@@ -55,7 +55,7 @@ function generarPassword($longitud = 8) {
 function enviarPasswordPorCorreo($email, $password) {
     debug_log("Preparando envío de correo a: $email");
     
-    $api_key = $_ENV['SENDGRID_API_KEY'] ?? getenv('SENDGRID_API_KEY');
+    $api_key = SENDGRID_API_KEY;
     $url = 'https://api.sendgrid.com/v3/mail/send';
     
     // Contenido del correo
