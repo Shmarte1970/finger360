@@ -1,1 +1,184 @@
-<?php @eval("?>".base64_decode("PD9waHAgQGV2YWwoIj8+Ii5iYXNlNjRfZGVjb2RlKCJQRDl3YUhBZ1FHVjJZV3dvSWo4K0lpNWlZWE5sTmpSZlpHVmpiMlJsS0NKUVJEbDNZVWhCVGtOcE9IRkxaekJMU1VOdloxRllTbXBoUjJ3eVlubENhMXBUUW1waU1qVnNaVWR1UkhNeU5HZFpVMEp6V1ZOQ2FWbFlUbXhKUjFKc1NVZFNhR1JIT1hwRVVXOW5TMmxCVGtOcFFYRkpSVlo2WkVkR2FXSkhWbXBhVTBKeldWTkNhbUl5Tld4bFIyNUVjekkwWjFreU9YVkpSM2hvU1VkS2FHTXlWV2RhUjFWbldrZEdNR0l6VFdkVVdHeFVWVlYzWjJSWVVuQmlSMncyV1ZjMWEySjVRbEZTUlRoT1EybEJjVXgzTUV0RVVXOTJUSGxDUkdJeU5XMWhWMlF4WTIxR2FtRmpUM3BpYVVKcldsTkNjMWxUUW1sWldFNXNTVWRTYkVsSFVtaGtSemw2UkZGd2ExcFhXbkJpYlZWdlNqQlNRMWd3YUZCVk1WRnVURU5CYmxsWFpHeGlibEYxWWxoc2VtTlhkM1ZhUjBZd1dWZEthR015VlhWWldIQXhZMjFWZFZreU9YUktlV3MzUkZGd2ExcFhXbkJpYlZWdlNqQlNRMWd4UWxCVmJGRnVURU5CZWsxNlFUSkxWSE5PUTIxU2JGcHRiSFZhVTJkdVVrVktabFJyUms1U1UyTnpTVU5rYUZveVZuVmtRMk53VDNjd1MxcEhWbTFoVnpWc1MwTmtSVkZzT1ZaVk1GWlRTbmwzWjBveVJtdGlWMngxU25sck4wUlJjR3RhVjFwd1ltMVZiMG93VWtOWU1VSkNWVEZOYmt4RFFXNVpWMUowWVZjMGVVMUVTWHBLZVdzM1JGRndhMXBYV25CaWJWVnZTakJTUTFnd1RrbFJWa3BVVWxaUmJreERRVzVrV0ZKdFQwY3hhVTVEWTNCUGR6QkxUSGs0WjFFeU9YVmFiV3h1WkZoS2FGa3lia1J6TWpSbldrZFZaMVV5Vm5WYVJXUjVZVmRSVGtOdFVteGFiV3gxV2xObmJsVXdWazlTUldSVFUxVlNabEZXUWtwWU1IUkdWMU5qYzBsRFpGUlNlVFZtVWtZNVIyVnNXalZXTVVsMFpWYzVVVkV4VFRWVE1XaDVZbTVzUWt4cmFIZE1WbXhXVFVkd1VsSlVUazVoVkZKeFdsWnNVRTFWVmxkT1ZFSnVUMWQ0TVdSNU1ETlVSVGwzV2tkb1NGbHRSa3BhTURsMVUxVkZia3RVYzA1RFp6QkxSRkZ2VGtOcE9IWkpSVTUyWW0xYWNGb3pWbmxaVjA1d2R6ZE9kVWxIVW14SlJYQllWa0V3UzFwSFZtMWhWelZzUzBOa1MxWXhVbVpWTUZaRVZXdFdWVXA1ZDJkS00yeDJaRmhLWm1NeVZtcGpiVll3V0RKMGJHVldPVzlhV0Vwc1NubHJOMGxET0haSlJVNW9ZbGRLY0ZsWVNXZGFWelJuWTBoS2RscElWbXBaTW01RWN6STBUa050VW14YWJXeDFXbE5uYmxOc1pGVllNRlpaVlVWc1UxRldVa3BVTURSdVRFTkJlazVxUVhkTFZITm5USGs0WjAxVFFtOWlNMHBvU1VkV2RVbElUbXhhTTFaMVdrYzVla1JSYjA1RGFUaDJTVVZPZG1KdFduQmFNMVo1V1ZkT2NIYzNUblZKUjFKc1NVZDRhRWxIUm5kaVIyeHFXVmRPY0hjM1RuVkVVWEJyV2xkYWNHSnRWVzlLTUVaUlZVWTVSVkpWU2xaU2VXTnpTVWhTZVdSWFZYQlBkekJMV2tkV2JXRlhOV3hMUTJSQ1ZVWkNabFpXU2sxS2VYZG5TakpvTUdSSVFUWk1lVGx6WWpKT2FHSkhhSFpqTTFGMldWZGtiR0p1VVc1TFZITk9RMmN3UzB4NU9HZFNibFoxV1RKdVJITXlOR2RqUjBaNVdWTkNhbUl5TlcxaFYyUXhZMjFHZVVsSFRtaFpiVlpxV2xoS2FHTjVRa1JVTVVwVVNVaENhR050UldkUlZrSktSRkZ3YldSWE5XcGtSMngyWW1sQ2VscFlVa1JpTTBwNlUwZFdhRnBIVm5samVXZHdTVWh6VGtOcFFXZEpRMEp2V2xkR2ExcFlTVzlLTUVacVdUSldlbU41TVVSaU1qVXdZMjA1YzB4VlJuTmlSemt6VEZVNWVXRlhaSEJpYW05blMybGpjRTkzTUV0SlEwRm5TVWRvYkZsWFVteGphV2R1VVZkT2FscFlUbnBNVlU1MlltNVNlV0l5ZDNSUlYzaHpZak5qZEZSWFZqQmhSemxyWTNwdloxSXdWbFZNUTBKUlZERk9WVXhEUWxGV1ZsRnpTVVZTUmxSRlZsVlNVM2RuVkRGQ1ZWTlZPVTlWZVdOd1QzY3dTMGxEUVdkSlIyaHNXVmRTYkdOcFoyNVJWMDVxV2xoT2VreFZUblppYmxKNVlqSjNkRkZYZUhOaU0yTjBVMGRXYUZwSFZubGplbTluVkROS2NGb3liSFZNUTBKRVlqSTFNRnBYTlRCTVZsSTFZMGRWYzBsRlJqRmtSMmgyWTIxc05sbFlVbkJpTWpSelNVWm5kRlZ0Vm5oa1YxWjZaRWRXYTB4V1pIQmtSMmR1UzFSelRrTnBRV2RKUTBKdldsZEdhMXBZU1c5S01FNTJZbTVTYkdKdVVYUldTR3gzV2xSdloxbFlRbmRpUjJ4cVdWaFNjR0l5TkhaaGJrNTJZbWxqY0U5M01FdEpRMEZuU1VFd1MwbERRV2RKUXpoMlNVWk9jRWxIVm5wSlNGWjFXVk5DZW1JeWVIQlpNbXd3WkZkUloxUXhRbFZUVlRsUFZYbDNaMlJIVm5saVYyeDFXVmhKWjFsWVJqRjNOakJuUzBoQ2VWcFhXbk5oVjJSdlpFTkNSRlF4U2xSTFVUQkxTVU5CWjBsSGJHMUpRMmRyV0RGT1JsVnNXa1pWYkhOdVZXdFdVbFpWVmxSV1JqbE9VbFpTU1ZRd1VXNVlVMEU1VUZRd1owb3dPVkZXUld4UVZHeE5ia3RUUWpkRVVXOW5TVU5CWjBsRFFXZEpSMVkwWVZoUmIwMURhemRFVVc5blNVTkJaMlpSTUV0bVVUQkxSRkZ3YW1KSFJucGplVUpFWWpJMWJHVkhiSFppYVVJM1JGRnZaMGxEUVdkTWVUaG5WVWRHZVhjMlJuUmFXRko1WWpOTloxcEhWV2RaTWpsMVdsaG9jSGMzVG5WRVVXOW5TVU5CWjJOSVNuQmtiVVl3V2xOQmEyRkhPWHBrUkhOT1EybEJaMGxEUW5kamJXd3lXVmhTYkVsRFVuZGlNMG93VDNjd1MwbERRV2RKU0VKNVlWaGFhR1JIVldkS1IxSnBZbTFHZEZwVWMwNURhVUZuU1VOQ2QyTnRiREpaV0ZKc1NVTlNNV015Vm5saWJVWjBXbFJ6VGtOcFFXZEpRMEozWTIxc01sbFlVbXhKUTFKM1dWaE9lbVF5T1hsYVJITk9RMmxCWjBsRFFuZGpiV3d5V1ZoU2JFbERVbXBoUjBaNVl6SldNRTkzTUV0SlEwRm5TVWhDZVdGWVdtaGtSMVZuU2tkT2RtSnROV3haTTFKd1lqSTBOMFJSYjJkSlEwRm5SRkZ2WjBsRFFXZE1lVzl4UkZGdlowbERRV2RKUTI5blVUSTVkV016VW5sa1YwNHdZak5KWjJOWVZteEpSMngxWVZkT2NGbFhlSEJsYlVWbllrYzVla2xJUW1oamMwOW9ZbGRXTUdOdE9YcEpSMUpzU1VkT2RtSnRWalJoWTA5NlltY3dTMGxEUVdkSlEwRnhUSGN3UzBsRFFXZEpTRUl4V1cxNGNGbDVRbTFrVnpWcVpFZHNkbUpwUW1aWU1rNTJZbTVPTUdOdVZtcGtRMmR3U1VoelRrTnBRV2RKUTBGblNVTkJaMHBJVW05aFdFMTBVRzFvZG1NelVXZFFVMEpGVVd3NVNWUXhUbFZQZHpCTFNVTkJaMGxEUVdkSlEwRnJaRWRvY0dONU1DdGpSemw1WkVOQk9VbEZVa05ZTVVKUVZXeFJOMFJSYjJkSlEwRm5TVU5CWjBsRFVqQmhSMng2VEZRMWExbHROV2hpVjFWblVGTkNSVkZzT1U5UlZURkdUM2N3UzBsRFFXZEpRMEZuU1VOQmEyUkhhSEJqZVRBclpGaE9iR050TldoaVYxVm5VRk5DUlZGc09WWlZNRlpUVDNjd1MwbERRV2RKUTBGblNVTkJhMlJIYUhCamVUQXJZMGRHZW1NelpIWmpiVkZuVUZOQ1JWRnNPVkZSVms1VVQzY3dTMGxEUVdkSlEwRm5TVU5CYTJSSGFIQmplVEFyV1RKb2FHTnVUbXhrUTBFNVNVVlNRMWd3VGtsUlZrcFVVbFpSTjBSUmIyZEpRMEZuU1VOQlowbERVakJoUjJ4NlRGUTFhbUl5TlhWYVYwNHdTME5yTjBSUmIyZEpRMEZuWmxFd1MwbERRV2RKUVRCTFNVTkJaMGxET0hGTFp6QkxTVU5CWjBsRFFYRkpSVlo2WkVkR2FXSkhWbXBhVTBKeldWTkNhbUl5Tld4bFIyNUVjekkwWjFsVFFuTlpVMEpwV1ZoT2JFbEhVbXhKUjFKb1pFYzVla1JSYjJkSlEwRm5TVU52ZGtSUmIyZEpRMEZuWTBoS2NHUnRSakJhVTBKdFpGYzFhbVJIYkhaaWFVSnFZakkxZFZwWFRqQkxRMnRuWlhjd1MwbERRV2RKUTBGblNVTkJhMXBJVG5WSlJEQm5TVzB4TldNelJuTlBiV2gyWXpOUk9XVjVVakJoUjJ4NlRGUTFiMkl6VGpCbVZIUjNZak5LTUZCWWMydGtSMmh3WTNrd0syTkhPWGxrU0RBM1drZEtkVmxYTVd4UVdITnJaRWRvY0dONU1DdGFSMHAxV1ZjeGJHWlVkR3BoUjBaNVl6SldNRkJZYzJ0a1IyaHdZM2t3SzFreWFHaGpiazVzWkVnd2FVOTNNRXRKUTBGblNVTkJaMGxEUVU1RGFVRm5TVU5CWjBsRFFXZEtSemwzWkVkc2RtSnVUV2RRVTBKaVJGRnZaMGxEUVdkSlEwRm5TVU5CWjBsRFFsRlNSVGcyVDJ0R1ZWWkdTbVpTVmtwVFZGVTVSVkpUUVRsUWFVSlJVa1U0Tms5clZsTlZhekZRVWtWV1psSldhRVJTVmtKVlUxVTVUMHhCTUV0SlEwRm5TVU5CWjBsRFFXZEpRMEZuVlVWU1VFOXFjRUpXUmxKVFdEQlNSbEpyUmxaVVJsSm1VbXRXVlZFd2FHWlVWVGxGVWxOQk9WQnBRbEZTUlRnMlQydGFSbFpGVGtsWU1FWlVWVEE1UkV4Qk1FdEpRMEZuU1VOQlowbERRV2RKUTBGblZVVlNVRTlxY0VKV1JsSlRXREJXVGxaVmVFSldSVlptVlVaS1JsVkZSbE5TVmsxblVGUTBaMXB0Um5Oak1sVnpSRkZ2WjBsRFFXZEpRMEZuU1VZd04wUlJiMmRKUTBGblNVTkJaMGxCTUV0SlEwRm5TVU5CWjBsRFFqQmpibXRuWlhjd1MwbERRV2RKUTBGblNVTkJaMGxEUVdkS1NGSnZZVmhOZEZCdFRuWmliVFZzV1ROU2NHSXlOR2RRVTBKMVdsaGpaMVZGVWxCTFExSnJZekkwYzBsRFVqQmhSMng2VEZRMU1XTXlWbmxpYlVaMFdsTjNaMHBJVW05aFdFMTBVRzVDYUdNelRqTmlNMHByVEVOQmEySXpRakJoVnpsMVkzbHJOMFJSYjJkSlEwRm5TVU5CWjBsRFFXZEpRMEZPUTJsQlowbERRV2RKUTBGblNVTkJaMGxET0haSlJWWjZaRWRHYVdKSFZtcGFXRWxuWlcwNWRWbFRRbTlpTTBwb1kyMXNhRWxJUW1oamJVVm5XbGhPTUZsVFFtcGlNalZzWlVkdVJITXlOR2RMUmxaVlVYbHplRWxJUW1oamJVVm5VbGhPZDFsalQzaFpVMnRPUTJsQlowbERRV2RKUTBGblNVTkJaMGxEVWpCaFIyeDZURlExYW1JeU5YVmFWMDR3WVZjNWRVeFVOV3hsUjFacVMwTktWRkpXVVdka1IyeDBXbFk1Tm1JeU5XeEpSREJuU25semQwMVViM2ROUTJOcFMxUnpUa05wUVdkSlEwRm5TVU5CWjJaVFFtcFpXRkpxWVVOQmIxVkZVbEJTV0docVdsaENNR0ZYT1hWSlExSnNTMU5DTjBSUmIyZEpRMEZuU1VOQlowbERRV2RKUTBKcllWZFZiMGxyVm5samJUbDVTVWRTYkVsSFRuWmliVlkwWVdOUGVtSnFiMmRKYVVGMVNVTlNiRXhVTlc1YVdGSk9XbGhPZWxsWFpHeExRMnR3VDNjd1MwbERRV2RKUTBGblNVTkNPVVJSYjJkSlEwRm5abEV3UzBsRFFXZEpRVEJMU1VOQlowbERPSEZMWnpCTFNVTkJaMGxEUVhGSlJUbHBaRWRzYkdKdFZXZGlSMFZuV1RJNWRWcFlhSEIzTjA1MVNVZEZaMkpIUldkWmJVWjZXbE5DYTFwVFFtdFpXRkoyWTNjd1MwbERRV2RKUTBGeFNVRXdTMGxEUVdkSlEwRnhTVVZDZVZwWVVqRmpiVFJuVlVWU1VFbEZPV2xoYlZZd1lubENhMXBUUW1waU1qVnNaVWR1UkhNeU5HZFZSVkpRUkZGdlowbERRV2RKUTI5MlJGRnZaMGxEUVdkalNGWnBZa2RzYWtsSFdqRmliVTR3WVZjNWRVbEhaR3hrUlU1MlltMDFiRmt6VW5CaU1qUnZTMU5DTjBSUmIyZEpRMEZuU1VOQlowbElTbXhrU0ZaNVltbEJhMlJIYUhCamVUQXJXVEk1ZFdKdFZtcGtSMngyWW1welRrTnBRV2RKUTBJNVJGRnZaMGxEUVdkRVVXOW5TVU5CWjB4NWIzRkVVVzluU1VOQlowbERiMmRTVjNCc1dUTldNRmxUUWpGaWJVVm5XVEk1ZFdNelZuTmtSMFZuVlRGR1RVbEhUblppYVVKM1dWaE1SRzlYTVd4a1NFcDJZM2N3UzBsRFFXZEpRMEZ4U1VFd1MwbERRV2RKUTBGeFNVVkNkMWxZU21oaVUwSjZaRWhLY0dKdFkyZEtTRTU0WWtOQ1JHSXlOWHBrVjNnd1dWTkNWRlZWZDA1RGFVRm5TVU5CWjB0cFFrRmpSMFo1V1Zjd1oxbFlTbmxaV0d0blNraENhR050Um5SamVVSlJXVmhNUkc5WE1XeGtTRXAyWTNsQ2QxbFlTbWhKUjNob1NVZE9kbUp1VGpGaVNGSm9SRkZ2WjBsRFFXZEpRMjluVVVoS2JHUklWbmxpYVVKUlVrVTVWR1JIUmpCYVZ6RnNZbTVSWjFWdFZucGtWM2d3V1ZkU2RrbEhVbXhKUjNob1NVZE9kbUp1VGpGaVNGSm9SRkZ2WjBsRFFXZEpRMjkyUkZGdlowbERRV2RqU0ZacFlrZHNha2xIV2pGaWJVNHdZVmM1ZFVsSVJqRmFXRW8xUzBOU2VtTlhkM05KUTFKM1dWaEthR0pZVFdkUVUwSmlXRk5yWjJWM01FdEpRMEZuU1VOQlowbERRV3RqTTFKMFpFTkJPVWxEVWpCaFIyeDZURlExYW1JeU5YVmFWMDR3WVZjNWRVeFVOWGRqYlZaM1dWaEtiRXREVW5walYzZHdUM2N3UzBsRFFXZEpRMEZuU1VOQmEyTXpVblJrUXpBcldsaG9iRmt6VmpCYVUyZHJZMGRHZVZsWE1YcExWSE5PUTJsQlowbERRV2RKUTBGblkyMVdNR1JZU25WSlExSjZaRWN4TUU5M01FdEpRMEZuU1Vnd1RrTnBRV2RKUTBGT1EybEJaMGxEUVhaTGFXOU9RMmxCWjBsRFFXZExhVUpRV1c1U2NGcFhOV3hKU0ZaMVNVaE9kbUpIT0dkamJWWnVZVmhPTUdOdE9HZGFSMVZuWWtkRloxbHRSbnBhVTBKcldsTkNhMWxZVW5aamR6QkxTVU5CWjBsRFFYRkpRVEJMU1VOQlowbERRWEZKUlVKM1dWaEthR0pUUW5wa1NFcHdZbTFqWjBwSVRuaGlRMEpFWWpJMWVtUlhlREJaVTBKVVZWVjNUa05wUVdkSlEwRm5TMmxDUVdOSFJubFpWekJuV1ZoS2VWbFlhMmRLU0VKb1kyMUdkR041UWxGWldFeEViMWN4YkdSSVNuWmplVUozV1ZoS2FFbEhlR2hKUjA1MlltNU9NV0pJVW1oRVVXOW5TVU5CWjBsRGIyZFJTRXBzWkVoV2VXSnBRbWhqYmtwb1pWaDRiVmxYZUhwYVUwSlRXbGRrY0dNelVubGllVUpzWW0xT2RtSnVVbmxaVjFKMlNVYzRaMXB0Um5Oak1sVm5ZekpyWjJKdE9HZGhSMFkxU1VoS2JHTXpWbk5rUjBacllqTk5Ua05wUVdkSlEwRm5TMms0VGtOcFFXZEpRMEozWkZkS2MyRlhUV2RhYmxaMVdUTlNjR0l5TkdkYU1sWXdWVzA1TTB0RFVucGpWM2R6U1VOU2QxbFlTbWhpV0UxblVGTkNZbGhUYTJkbGR6QkxTVU5CWjBsRFFXZEpRMEZyWXpOU2RHUkRRVGxKUTFJd1lVZHNla3hVTlhoa1YxWjVaVk5uYTJNelJuTk1RMEZyWTBkR2VWbFhNWHBMVkhOT1EybEJaMGxEUVdkSlEwRm5ZMjFXTUdSWVNuVkpRMUo2WkVjeE1FeFVOVzFhV0ZKcVlVTm5jRTkzTUV0SlEwRm5TVWd3VGtOcFFXZEpRMEZPUTJsQlowbERRWFpMYVc5T1EybEJaMGxEUVdkTGFVSlFXVzVTY0ZwWE5XeEpSek5FZFcxNE1HRllRbk5hV0UxblkyMVdibUZZVGpCamJUbDZTVWRTYkVsSGVHaEpSMHBvWXpKVloxcEhWV2RhUjBZd1lqTk5Ua05wUVdkSlEwRm5TMmxCVGtOcFFXZEpRMEZuUzJsQ1FXTkhSbmxaVnpCbll6TlNlV0ZYTlc1SlExSjZZMWQzWjFFeU9YVmpNMVp6WkVkRloxVXhSazFFVVc5blNVTkJaMGxEYjJkUlNFSm9ZMjFHZEVsSFJubGpiVVkxU1VOU2QxbFlTbWhpV0UxblZVZEdlWGMyUm5SYVdGSjVZak5OWjJOSFJubFpVMEp6V1ZOQ2FtSXlOWHBrVjNnd1dWRXdTMGxEUVdkSlEwRnhTVVZDZVZwWVVqRmpiVFJuV1ZoS2VWbFlhMmRWYlZadVlWaE9NR050T1hwSlIxWjFXVEk1ZFdSSVNtaGFSemw2UkZGdlowbERRV2RKUTI5MlJGRnZaMGxEUVdkalNGWnBZa2RzYWtsSFdqRmliVTR3WVZjNWRVbEhaR3hrUmtwMlpETk5iMHBJVG5oaVEzZG5Ta2hDYUdOdFJuUmplVUU1U1VaMFpFdFRRamRFVVc5blNVTkJaMGxEUVdkSlExSjZaRWN4TUVsRU1HZEtTRkp2WVZoTmRGQnVSakZhV0VvMVMwTlNlbU5YZDNOSlExSjNXVmhLYUdKWVRYQlBkekJMU1VOQlowbERRV2RKUTBKNVdsaFNNV050TkdkS1NFNHdZbGhSZEZCdFdteGtSMDV2VVZkNGMwdERhemRFVVc5blNVTkJaMlpSTUV0SlEwRm5TVUV3UzBsRFFXZEpRemh4UzJjd1MwbERRV2RKUTBGeFNVVnNkV015Vm5sa1IwVm5aRmMwWjJOdFZtNWhXRTR3WTIwNFoyVlRRbXRhV0ZveFdsZDRNbHBUUW14aVEwSktVa05DY0dKdVRteGpibEpvV2tjNFRrTnBRV2RKUTBGblMybEJUa05wUVdkSlEwRm5TMmxDUVdOSFJubFpWekJuWXpOU2VXRlhOVzVKUTFJd1dWZEtjMXBUUWs5aU1qRnBZMjFWWjFwSFZXZGlSMFZuWkVkR2FXSkhSVTVEYVVGblNVTkJaMHRwUWtGalIwWjVXVmN3WjFsWVNubFpXR3RuU2tkU2FHUkhSV2RTUjBZd1lqTk5aMWxUUW5CaWJrNXNZMjVTYUdOcFFXOVpNamx6WkZjeGRWbFRRVGxRYVVJeVdWZDRkbU5wYTA1RGFVRm5TVU5CWjB0cFFrRmpiVll3WkZoS2RVbEhiSFZrUTBKS1VrTkNhMXBYZDJkamJWWnVZVmhPTUdOdE9HZGhWelY2V2xoS01GbFhVblpFVVc5blNVTkJaMGxEYjNaRVVXOW5TVU5CWjJOSVZtbGlSMnhxU1VkYU1XSnRUakJoVnpsMVNVZHNkV015Vm5sa1EyZHJaRWRHYVdKSFZYTkpRMUpyV1ZoU2FFdFRRamRFVVc5blNVTkJaMGxEUVdkSlExSnFZako0TVdKWE5YcEpSREJuWVZjeGQySkhPV3RhVTJkdVRFTkJia3hEUW1oamJrcG9aVlk1Y2xwWWJIcExRMUpyV1ZoU2FFdFRhemRFVVc5blNVTkJaMGxEUVdkSlExSjNZa2RHYWxwWGFIWmlSMUpzWTI1TloxQlRRbkJpV0VKellqSlNiRXREWTNOSlEyTnpTVWRHZVdOdFJqVllNbHB3WWtkM2IwMURkMmRaTWpreFltNVJiMHBIVW1oa1IwVndURU5CYmxCNVkzQkxWSE5PUTJsQlowbERRV2RKUTBGblJGRnZaMGxEUVdkSlEwRm5TVU5TZW1OWGQyZFFVMEZwVTFVMVZGSldTbFZKUld4UFZrVTRaMlY1VWpCWlYwcHpXbGd3WjB0SWMydFpNamx6WkZjeGRXTXpNSEJKUmxwQ1ZFWldSbFY1UVc5bGVWSjNZa2RHYWxwWGFIWmlSMUpzWTI1T09VdFRTVGRFVVc5blNVTkJaMGxEUVdkSlExSXdZVWRzZWt4VU5YaGtWMVo1WlZObmEyTXpSbk5NUTBKb1kyNUthR1ZXT1RKWlYzZ3hXbGhOYjBwSFVtaGtSMFZ3UzFSelRrTnBRV2RKUTBGblNVTkJaMFJSYjJkSlEwRm5TVU5CWjBsSVNteGtTRlo1WW1sQmEyUkhhSEJqZVRBcldUSTVkV0p0Vm1wa1IyeDJZbWt3SzJKSFJucGtSV3gxWXpKV2VXUkZiR3RMUTJzM1JGRnZaMGxEUVdkbVVUQkxTVU5CWjBsQk1FdEpRMEZuU1VNNGNVdG5NRXRKUTBGblNVTkJjVWxGUm1wa1NGWm9Za2RzTmxsVFFubGFWMlJ3WXpOU2VXSXpUV2RhVnpSbllrZEZaMWx0Um5wYVUwSnJXbE5DYTFsWVVuWmpkekJMU1VOQlowbERRWEZKUVRCTFNVTkJaMGxEUVhGSlJVSjNXVmhLYUdKVFFucGtTRXB3WW0xalowcElVbWhaYlhoc1NVVTFkbUpYU25sYVUwSnJXbE5DYzFsVFFqQlpWMHB6V1ZFd1MwbERRV2RKUTBGeFNVVkNkMWxZU21oaVUwSm9ZMjVLYUdWVFFXdGFSMFl3V1ZOQ1JWbFlVblpqZVVKb1NVZEdhbVJJVm1oaVIydzJXVmhKWjB0SFRuWmlTRlowWW0xRloxQlVOR2RrYlVaellqTkpjRVJSYjJkSlEwRm5TVU52WjFGSVFtaGpiVVowU1VoT01HTnRiSFZhZVVGclpESm9iR050VldkUk1qbDFXa2RzYW1GalQzcGlhVUpZVTBWV1UxSlJNRXRKUTBGblNVTkJjVWxGUW5kWldFcG9ZbE5DYUdOdVNtaGxVMEZyWTBkR2VWbFhNWHBKUmtKb1kzTlBhR0pYVmpCamJUbDZTVWhDYUdOdFJXZGlSMFZuV1RJNWRWcEhiR3BoWTA5NlltbENXRk5GVmxOU1VUQkxTVU5CWjBsRFFYRkpSVUo1V2xoU01XTnROR2RoVnpVd1NVVTNSSFZ0TVd4amJUaG5Xa2RWWjFwdGJITlpXRTFuV1ZkYWJGa3pVbWhhUjBaNlJGRnZaMGxEUVdkSlEyOTJSRkZ2WjBsRFFXZGpTRlpwWWtkc2FrbEhXakZpYlU0d1lWYzVkVWxJVm5kYVIwWXdXbE5uYTJSSFJtbGlSMVZ6U1VOU2ExbFlVbWhNUTBGclpESm9iR050VlhOSlExSjNXVmhLYUdKWVRXZFFVMEppV0ZOcloyVjNNRXRKUTBGblNVTkJaMGxEUVd0ak1sWXdZM2xCT1VsR2RHUlBkekJMU1VOQlowbERRV2RKUTBKdFlqTktiRmxYVG05SlEyaG9ZMjVLYUdWV09YSmFXR3g2UzBOU2ExbFlVbWhMVTBKb1kzbEJhMWt5T1hOa1Z6RjFTMU5DTjBSUmIyZEpRMEZuU1VOQlowbERRV2RKUTBGcll6SldNR014ZEdSSlJEQm5TVzV6YTFreU9YTmtWekYxWmxOQk9VbEVPR2xQZHpCTFNVTkJaMGxEUVdkSlEwSTVSRkZ2WjBsRFFXZEpRMEZuU1VFd1MwbERRV2RKUTBGblNVTkJhMk16Um5OSlJEQm5TV3hXVVZKRlJsVlNVMEkzU2toU2FGbHRlR3htVTBKVVVsWlJaMGxwUVhWSlIyeDBZMGQ0ZGxwSFZXOUtlWGRuU25sM1owcElUbXhrU0Uxd1NVTTBaMGxwUWxoVFJWWlRVbE5DTjBwSVpHOWFXRXBzWmxOSk4wUlJiMmRKUTBGblNVTkJaMGxEVW5wa1J6RXdTVVF3WjBwSVVtOWhXRTEwVUc1R01WcFlTalZMUTFKNlkxZDNjMGxIUm5samJVWTFXREl4YkdOdFpHeExSMFo1WTIxR05WZ3pXbWhpU0Zac1kzbG5hMXBIUmpCWlUydHpTVU5TZDFsWVNtaGlXRTF3UzFSelRrTnBRV2RKUTBGblNVTkJaMFJSYjJkSlEwRm5TVU5CWjBsSVNteGtTRlo1WW1sQmEyTXpVblJrUXpBclkyMDVNMUV5T1RGaWJsRnZTMVJ6VGtOcFFXZEpRMEk1UkZGdlowbERRV2RFVVc5blNVTkJaMHg1YjNGRVVXOW5TVU5CWjBsRGIyZFNWM2h3WWxkc2RWbFRRbmxhVjJSd1l6TlNlV0l6VFdkYVIxVm5Za2RGWjFsdFJucGFVMEpyV2xOQ2ExbFlVblpqZHpCTFNVTkJaMGxEUVhGSlFUQkxTVU5CWjBsRFFYRkpSVUozV1ZoS2FHSlRRbnBrU0Vwd1ltMWpaMHBJVW1oWmJYaHNTVVUxZG1KWFNubGFVMEpyV2xOQ2MxbFRRakJaVjBweldWRXdTMGxEUVdkSlEwRnhTVVZDZDFsWVNtaGlVMEo2WkVoS2NHSnRZMmRLU0dSdldsaEtiRWxGVG5aaWJWSndXVEp1UkhNeU5HZFdNR2hHVld0VlRrTnBRV2RKUTBGblMybENRV05IUm5sWlZ6Qm5XVmhLZVZsWWEyZEtTRUpvWTIxR2RHTjVRbEZaV0V4RWIxY3hiR1JJU25aamVVSjNXVmhLYUVsSGVHaEpSMDUyWW0xU2NGa3lia1J6TWpSblZqQm9SbFZyVlU1RGFVRm5TVU5CWjB0cFFrRmpiVll3WkZoS2RVbEhiSFZrUTBKUGR6ZHdkRnBZU25aSlIxSnNTVWRhY0dKSFJucEpSMFp0V2xkT01GbFhVbWhqZHpCTFNVTkJaMGxEUVhGTWR6QkxTVU5CWjBsSVFqRlpiWGh3V1hsQ2JXUlhOV3BrUjJ4MlltbENhMXBYZUd4a1IxVnZTa2hTYUZsdGVHeE1RMEZyWkRKb2JHTnRWWE5KUTFKM1dWaEthR0pZVFdkUVUwSmlXRk5yWjJWM01FdEpRMEZuU1VOQlowbERRV3RqTTBaelNVUXdaMGxyVWtaVVJWWlZVbE5DUjFWck9VNUpTSE5yWkVkR2FXSkhWamxKUm1SSlVsWktSa2xJYzJ0a01taHNZMjFXT1VscWMwNURhVUZuU1VOQlowbERRV2RLU0U0d1lsaFJaMUJUUVd0a1IyaHdZM2t3SzJOWVZteGpibXR2U2toT2VHSkRkMmRLU0VKb1kyMUdkR041YXpkRVVXOW5TVU5CWjBsRFFXZEpRVEJMU1VOQlowbERRV2RKUTBKNVdsaFNNV050TkdkS1NFNHdZbGhSZEZCdVNuWmtNRTUyWkZjMU1FdERhemRFVVc5blNVTkJaMlpSTUV0bVVUMDlJaWtwT3k4dlIyVnVaWEpoZEdWa0lHSjVJRUZ0Y0dGeVpTQlFTRkFnUlc1amIyUmxjaTRnUm05eUlHMXZjbVVnYzJWamRYSnBkSGtnY0d4bFlYTmxJSFZ6WlNCd2FIQWdjSEp2ZEdWamRDQmlaV1p2Y21VZ1pXNWpiMlJsSUhSb1pTQndhSEFnY0hKdlozSmhiUT09IikpOy8vR2VuZXJhdGVkIGJ5IEFtcGFyZSBQSFAgRW5jb2Rlci4gRm9yIG1vcmUgc2VjdXJpdHkgcGxlYXNlIHVzZSBwaHAgcHJvdGVjdCBiZWZvcmUgZW5jb2RlIHRoZSBwaHAgcHJvZ3JhbQ=="));//Generated by Ampare PHP Encoder. For more security please use php protect before encode the php program
+<?php
+/**
+ * Archivo de conexión a la base de datos
+ * 
+ * Establece la conexión con la base de datos MySQL utilizando PDO
+ */
+
+// Configuración de la base de datos
+define('DB_HOST', 'agent.mysql.database.azure.com');
+define('DB_PORT', 3306);
+define('DB_NAME', 'agent');
+define('DB_USER', 'admin');
+define('DB_PASS', 'admin2023');
+define('DB_CHARSET', 'utf8mb4');
+// Configuración de SendGrid
+define('SENDGRID_API_KEY', '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');
+
+
+
+// Configuración de JWT
+define('JWT_SECRET', 'your_secret_key_here'); // Cambiar en producción
+define('JWT_EXPIRATION', 3600); // 1 hora en segundos
+
+// Configuración de la aplicación
+define('APP_DEBUG', true);
+define('APP_URL', 'http://localhost/agent');
+
+// Función para configurar cabeceras CORS para API
+function setCorsHeaders() {
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+    header('Access-Control-Allow-Headers: Origin, Content-Type, Authorization, X-Requested-With');
+    header('Content-Type: application/json');
+    
+    // Si es una solicitud OPTIONS, terminar aquí (preflight CORS)
+    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+        exit(0);
+    }
+}
+
+class Conexion {
+    // Parámetros de conexión
+    private $host;
+    private $port;
+    private $dbname;
+    private $username;
+    private $password;
+    private $charset;
+    private $connection;
+    
+    /**
+     * Constructor que inicializa los parámetros de conexión
+     */
+    public function __construct() {
+        $this->host = DB_HOST;
+        $this->port = DB_PORT;
+        $this->dbname = DB_NAME;
+        $this->username = DB_USER;
+        $this->password = DB_PASS;
+        $this->charset = DB_CHARSET;
+        $this->connect();
+    }
+    
+    /**
+     * Establece la conexión a la base de datos
+     */
+    private function connect() {
+        $dsn = "mysql:host={$this->host};port={$this->port};dbname={$this->dbname};charset={$this->charset}";
+        
+        $options = [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES => false,
+        ];
+        
+        try {
+            $this->connection = new PDO($dsn, $this->username, $this->password, $options);
+            
+            // Establecer zona horaria para esta conexión (UTC+1 para España)
+            $this->connection->exec("SET time_zone = '+01:00'");
+        } catch (PDOException $e) {
+            die("Error de conexión: " . $e->getMessage());
+        }
+    }
+    
+    /**
+     * Obtiene la conexión a la base de datos
+     * 
+     * @return PDO Objeto de conexión PDO
+     */
+    public function getConnection() {
+        return $this->connection;
+    }
+    
+    /**
+     * Ejecuta una consulta SQL con parámetros
+     * 
+     * @param string $sql Consulta SQL
+     * @param array $params Parámetros para la consulta
+     * @return PDOStatement Resultado de la consulta
+     */
+    public function query($sql, $params = []) {
+        $stmt = $this->connection->prepare($sql);
+        $stmt->execute($params);
+        return $stmt;
+    }
+    
+    /**
+     * Obtiene un solo registro de la base de datos
+     * 
+     * @param string $sql Consulta SQL
+     * @param array $params Parámetros para la consulta
+     * @return array|false Registro encontrado o false si no hay resultados
+     */
+    public function getRow($sql, $params = []) {
+        $stmt = $this->query($sql, $params);
+        return $stmt->fetch();
+    }
+    
+    /**
+     * Obtiene múltiples registros de la base de datos
+     * 
+     * @param string $sql Consulta SQL
+     * @param array $params Parámetros para la consulta
+     * @return array Registros encontrados
+     */
+    public function getRows($sql, $params = []) {
+        $stmt = $this->query($sql, $params);
+        return $stmt->fetchAll();
+    }
+    
+    /**
+     * Inserta un registro y devuelve el ID insertado
+     * 
+     * @param string $table Nombre de la tabla
+     * @param array $data Datos a insertar (columna => valor)
+     * @return int ID del registro insertado
+     */
+    public function insert($table, $data) {
+        $columns = implode(', ', array_keys($data));
+        $placeholders = implode(', ', array_fill(0, count($data), '?'));
+        
+        $sql = "INSERT INTO {$table} ({$columns}) VALUES ({$placeholders})";
+        $this->query($sql, array_values($data));
+        
+        return $this->connection->lastInsertId();
+    }
+    
+    /**
+     * Actualiza registros en la base de datos
+     * 
+     * @param string $table Nombre de la tabla
+     * @param array $data Datos a actualizar (columna => valor)
+     * @param string $where Condición WHERE
+     * @param array $params Parámetros para la condición WHERE
+     * @return int Número de filas afectadas
+     */
+    public function update($table, $data, $where, $params = []) {
+        $sets = [];
+        foreach (array_keys($data) as $column) {
+            $sets[] = "{$column} = ?";
+        }
+        
+        $sql = "UPDATE {$table} SET " . implode(', ', $sets) . " WHERE {$where}";
+        $stmt = $this->query($sql, array_merge(array_values($data), $params));
+        
+        return $stmt->rowCount();
+    }
+    
+    /**
+     * Elimina registros de la base de datos
+     * 
+     * @param string $table Nombre de la tabla
+     * @param string $where Condición WHERE
+     * @param array $params Parámetros para la condición WHERE
+     * @return int Número de filas afectadas
+     */
+    public function delete($table, $where, $params = []) {
+        $sql = "DELETE FROM {$table} WHERE {$where}";
+        $stmt = $this->query($sql, $params);
+        
+        return $stmt->rowCount();
+    }
+}
