@@ -23,7 +23,7 @@ define('JWT_EXPIRATION', 3600); // 1 hora en segundos
 
 // Configuración de la aplicación
 define('APP_DEBUG', true);
-define('APP_URL', 'http://localhost/agent');
+define('APP_URL', 'finger360-a6fdc8h0bneqa8d7.spaincentral-01.azurewebsites.net');
 
 // Función para configurar cabeceras CORS para API
 function setCorsHeaders() {
