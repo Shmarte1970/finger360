@@ -9,8 +9,8 @@
 define('DB_HOST', 'agent.mysql.database.azure.com');
 define('DB_PORT', 3306);
 define('DB_NAME', 'agent');
-define('DB_USER', 'admin');
-define('DB_PASS', 'admin2023');
+define('DB_USER', 'riosmacias');
+define('DB_PASS', 'Xandra@012025');
 define('DB_CHARSET', 'utf8mb4');
 // Configuración de SendGrid
 define('SENDGRID_API_KEY', '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');
