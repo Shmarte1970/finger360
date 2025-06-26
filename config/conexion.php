@@ -65,12 +65,16 @@ class Conexion {
      * Establece la conexión a la base de datos
      */
     private function connect() {
-        $dsn = "mysql:host={$this->host};port={$this->port};dbname={$this->dbname};charset={$this->charset}";
+        // $dsn = "mysql:host={$this->host};port={$this->port};dbname={$this->dbname};charset={$this->charset}";
+        $dsn = "mysql:host={$this->host};port={$this->port};dbname={$this->dbname};charset={$this->charset};sslmode=require";
         
         $options = [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
             PDO::ATTR_EMULATE_PREPARES => false,
+            // Configuración SSL específica para Azure MySQL
+            PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
+            PDO::MYSQL_ATTR_SSL_CA => null,
         ];
         
         try {
